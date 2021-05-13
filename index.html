@@ -48,13 +48,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="Imagen1">
+                <img src="./assets/img/carousel1.jpg" class="d-block w-100 img-fluid" alt="Imagen1">
               </div>
               <div class="carousel-item">
-                <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="Imagen2">
+                <img src="./assets/img/carousel2.jpg" class="d-block w-100 img-fluid" alt="Imagen2">
               </div>
               <div class="carousel-item">
-                <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="Imagen3">
+                <img src="./assets/img/carousel3.jpg" class="d-block w-100 img-fluid" alt="Imagen3">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -75,7 +75,8 @@
                 <div class="col-4">
                     <div class="row>">
                         <div class="col bg-info">
-                            <i class="fas fa-plane fa-2x"></i>
+                            <!-- Se agrega un tootltip al primer icono y hacer commit -->
+                            <i class="fas fa-plane fa-2x" data-toggle="tooltip" data-placement="top" title="Las mejores opciones de vuelo"></i>
                         </div>
                     </div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error assumenda eius culpa nisi rerum officia, a et alias voluptates totam quos, 
@@ -86,14 +87,16 @@
                         aut error eaque esse molestiae eum adipisci et itaque velit ea.</p>
                     <div class="row>">
                         <div class="col bg-info">
-                            <i class="fas fa-mountain fa-2x"></i>
+                            <!-- Agregando popover al segundo icono y hacer commit-->
+                            <i class="fas fa-mountain fa-2x" data-toggle="popover" title="Amante de la montaña?" data-content="Entonces somos los ideales para ti"></i>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="row>">
                         <div class="col bg-info">
-                            <i class="fas fa-route fa-2x"></i>  
+                            <!-- Asociando la ventana modal al tercer icono -->
+                            <i class="fas fa-route fa-2x" data-toggle="modal" data-target="#exampleModal"></i>  
                         </div>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque, in doloribus recusandae delectus, porro modi quo deserunt 
@@ -173,6 +176,26 @@
             </div>
         </div>
     </footer>
+    <!-- Agregando la ventana modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Podemos planear la mejor ruta</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <p>Puedes escoger ruta en auto o bicicleta</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
     <!-- Sctipts de JQery 3.6.0 descomprimida -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- Scripts de Popper -->

@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("a").click(function(event){
         event.preventDefault();
-        /* Esto guarda el valor del haref de la etiqueta a */
+        /* Esto guarda el valor del h ref de la etiqueta a */
         var gato=this.hash;
         $("html").animate({
             /* Le resto el tamaño en pixeles de mi navbar */
@@ -11,4 +11,8 @@ $(document).ready(function(){
         800
         );
     });
+    /* Sentencia para tooltip */
+    $('[data-toggle="tooltip"]').tooltip()
+    /* Sentencia para el popover */
+    $('[data-toggle="popover"]').popover()
 });
