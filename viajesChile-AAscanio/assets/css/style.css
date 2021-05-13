@@ -1,0 +1,31 @@
+/* Clase de la navbar*/
+.navbar-brand{
+    font-size: 40px;
+    font-family: 'Oswald';
+    font-weight: bold;
+} 
+@media (max-width: 576px) {
+    .navbar-brand{
+        font-size: 30px;
+        font-family: 'Oswald';
+        font-weight: bold;
+    } 
+}
+/*Fondo Negro*/
+#Presentacion,#Destacados,#Contacto{
+    background-color: black;
+}
+#Destacados h5{
+    font-family: 'Oswald';
+    font-weight: 200;
+}
+#Destacados hr{
+    width: 80%;
+    height: 3px;
+}
+
+
+.misfuentes{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
