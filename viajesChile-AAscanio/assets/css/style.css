@@ -23,9 +23,20 @@
     width: 80%;
     height: 3px;
 }
-
-
-.misfuentes{
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Oswald', sans-serif;
+/* Ajustando el tamaño del carousel */
+.carousel .carousel-inner{
+    height:750px;
 }
+.carousel-item img{
+    height: 750px;
+    top: 0;
+}
+
+@media(max-width:576px){
+    .carousel .carousel-inner{
+        height:auto
+     }
+     .carousel-item img{
+        height: auto;
+    }
+} 
