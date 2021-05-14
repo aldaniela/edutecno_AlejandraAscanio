@@ -1,63 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Houstel Site</title>
-    <!-- Fuentes de Google -->
+    <meta name="author" content="Alejandra Ascanio">
+    <meta name="description" content="Barbershop">
+    <meta name="keywords" content="barberia, cortes, cabello">
+    <title>Barbershop</title>
+    <!-- Fuentes de Google Roboto y Playfair Display -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <!-- Mi estilo compilado -->
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="./assets/images/logo.png" alt="Logo de la pagina" class="logo_image">
-        </div>
+        <nav class="navegacion"></nav>
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="Logo de la pagina" class="logo_image">
+            </div>
+            <ul class="navegacion_lista">
+                <li class="navegacion_item">Nosotros</li>
+            </ul>
+        </nav>
     </header>
     <main class="main">
         <div class="main_container">
             <h1 class="main_title">
-                Disfruta de los paisajes del <span class="main_title-emphasis main_title-emphasis-size-xxl">Chile</span>
+                5 formas de cuidar tu corte de cabello
             </h1>
-            <div class="main_button">
-                <button type="button" class="button button_positive">Más destinos</button>
-            </div>
         </div>
     </main>
-    <form class="form">
-        <div class="form_container">
-            <label class="form_label">Lugar u hotel</label>
-            <input type="text" class="form_input-text" placeholder="Escribe tu destino">
-        </div>
-        <div class="form_container">
-            <label class="form_label">Fecha de llegada</label>
-            <input type="date" class="form_input-date">
-        </div>
-        <div class="form_container">
-            <label class="form_label">Fecha de salida</label>
-            <input type="date" class="form_input-date">
-        </div>
-        <div class="form_container">
-            <label class="form_label">Tipo de alojamiento</label>
-            <select class="form_select">
-                <option value="1">Hotel</option>
-                <option value="2">Hostel</option>
-                <option value="3">Departamento</option>
-            </select>
-        </div>
-        <div class="form_container">
-            <label class="form_label">Habitaciones</label>
-            <select class="form_select">
-                <option value="1">1 habitación</option>
-                <option value="2">2 habitaciones</option>
-                <option value="3">3 habitaciones</option>
-                <option value="4">+ de 4</option>
-            </select>
-        </div>
-        <button type="submit" class="button button_default">Buscar</button>
-    </form>
+    <section id="descipcion" class="descripcion">
+        <h3 class="descipcion_title">12 de abril de 2018</h3>
+        <p class="descripcion_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc quam, eget scelerisque quam 
+            semper quis. Mauris maximus blandit lorem, sit amet condimentum eros auctor quis. In ut semper ipsum, nec condimentum est. Phasellus 
+            sodales, nunc vitae feugiat consequat, turpis velit euismod mi, eget scelerisque felis odio nec tortor. Ut nibh ex, tincidunt eu 
+            faucibus vel, sollicitudin ut velit. Fusce dapibus turpis massa, nec pellentesque libero porttitor eu. Fusce vel pellentesque augue. 
+            Cras finibus elit nec nisl vehicula, in interdum dolor volutpat. Duis arcu odio, aliquet non sapien vitae, scelerisque aliquam lorem. 
+            Suspendisse et sem tincidunt, tincidunt odio id, varius enim. Vestibulum faucibus augue id fringilla vulputate. Sed vitae magna eu enim 
+            pellentesque laoreet. Pellentesque id molestie eros. Nunc quam nisi, efficitur in scelerisque eu, lacinia vel erat. Suspendisse vel 
+            lobortis lectus, eu convallis mauris. Praesent id odio imperdiet, tincidunt ex a, aliquam libero. Duis ultricies nisi nulla, eget 
+            cursus nibh interdum tempus. Integer sodales tincidunt imperdiet. Aenean ornare at tortor sed facilisis. Nulla gravida turpis ac 
+            ullamcorper iaculis. Cras fringilla felis id nibh efficitur ornare. Aenean accumsan orci sit amet semper eleifend. 
+            Proin quis tortor ante. Cras fermentum urna a felis placerat, eget malesuada ipsum placerat. Fusce scelerisque, 
+            leo quis auctor lacinia, mauris justo porta enim, eget dictum nisi sapien eget ex. Fusce in eros purus. Fusce volutpat nisi purus, ac
+            vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. Praesent tincidunt convallis ipsum, 
+            quis convallis metus. Vivamus ac gravida lectus, eget ultricies nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Nullam tristique pulvinar est at tristique. Vestibulum non blandit ex. Suspendisse ipsum justo, feugiat eu feugiat et, condimentum 
+            sit amet ipsum. Pellentesque eu vulputate dolor. Aliquam pretium arcu nec aliquet varius.</p>
+        <button type="button" class="descripcion_button">Compartir</button>
+        <button type="button" class="descripcion_button">Comentar en twitter</button>
+    </section>
+    <section id="persona" class="persona">
+        <img src="./assets/images/naomi-thai.png" alt="Foto Naomi" class="persona_image">
+        <h3 class="persona_title">Naomi Thai</h3>
+        <h4 class="persona_contacto">@Naothai <br>depelos.com</h4> 
+    </section>
 </body>
 </html>
