@@ -8619,6 +8619,13 @@ img {
   max-width: 100%;
 }
 
+/* Base typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: medium;
+}
+
 /* Base Styles */
 body {
   height: 100vh;
@@ -8627,13 +8634,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 80%;
-}
-
-/* Base typography */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: medium;
 }
 
 /* Header layout */
@@ -8703,6 +8703,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 0.5rem;
   text-align: center;
   margin-left: 50%;
+  margin-top: 30px;
 }
 
 /* Buttons */

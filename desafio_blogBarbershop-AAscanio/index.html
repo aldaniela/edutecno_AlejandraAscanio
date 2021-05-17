@@ -23,7 +23,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                         <a class="nav-link" href="#Presentacion">Nosotros</a>
                         </li>
@@ -31,8 +31,8 @@
                             <a class="nav-link" href="#Destacados">Trabajo</a>
                         </li>
                         <li class="nav-item active nav-item header__item-seleccionado">
-                            <a class="nav-link" href="#HeroSection">Blog</a>
-                            </li>
+                            <a class="nav-link" href="#HeroSection">Blog <span class="sr-only">(current)</span></a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#Contacto">Horas</a>
                         </li>
@@ -44,11 +44,11 @@
             </div>
         </nav>
     </header>
-    <section id="main" class="main">
+    <main class="main">
         <div class="container">
             <h1>5 formas de cuidar tu corte de cabello</h1>
         </div>
-    </section>
+    </main>
     <section id="descripcion" class="descripcion">
         <div class="container">
             <p class="descripcion__title">12 de abril de 2018</p>
@@ -67,22 +67,22 @@
                 vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. Praesent tincidunt convallis ipsum, 
                 quis convallis metus. Vivamus ac gravida lectus, eget ultricies nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
                 Nullam tristique pulvinar est at tristique. Vestibulum non blandit ex. Suspendisse ipsum justo, feugiat eu feugiat et, condimentum 
-                sit amet ipsum. Pellentesque eu vulputate dolor. Aliquam pretium arcu nec aliquet varius.</p>
-            <button type="button" class="btn btn-secondary">Compartir</button>
-            <button type="button" class="btn btn-secondary">Comentar en twitter</button>
+                sit amet ipsum. Pellentesque eu vulputate dolor. Aliquam pretium arcu nec aliquet varius.</p> <br><br>
+            <button type="button" class="btn btn-secondary descripcion__button">Compartir</button> 
+            <button type="button" class="btn btn-secondary descripcion__button">Comentar en twitter</button>
         </div>
     </section>
     <section id="persona" class="persona">
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <img src="./assets/images/naomi-thai.png" alt="Foto Naomi" class="persona__image">
+                <div class="col-3">
+                    <img src="./assets/images/naomi-thai.png" alt="Foto Naomi" class="persona__image rounded-circle">
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <h3 class="persona__title">Naomi Thai</h3>
                     <h4 class="persona__contacto">@Naothai <br>depelos.com</h4> 
                 </div>
-                <div class="col-4">
+                <div class="col-6">
                     <p class="persona__texto">Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. 
                         Praesent tincidunt convallis ipsum, quis convallis metus.</p>
                 </div>
@@ -93,21 +93,23 @@
         <div class="container">
             <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-center">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
-                  </li>
+                  <li class="page-item"><a class="page-link indice__selector--izquierda" href="#">Anterior</a></li>
                   <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item active indice__item--resaltado"><a class="page-link" href="#">2</a></li>
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Siguiente</a>
-                  </li>
+                  <li class="page-item"><a class="page-link indice__selector--derecha" href="#">Siguiente</a></li>
                 </ul>
-              </nav>
+            </nav>
         </div>
     </section>
     <footer class="cierre">
         <img class="image-responding cierre__logo" src="./assets/images/logo.png" alt="Logo del sitio" loading="lazy">
     </footer>
+    <!-- Script de Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Scripts de Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Scripts de Boostrap 4.1 por CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

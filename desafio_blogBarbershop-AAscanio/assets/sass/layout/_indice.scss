@@ -1,0 +1,14 @@
+.indice{
+    a{
+        @extend #{'.page-link', '.bg-light'};
+        @extend #{'.page-link', '.text-dark'};
+    }
+}
+.indice__selector--derecha{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.indice__selector--izquierda{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}

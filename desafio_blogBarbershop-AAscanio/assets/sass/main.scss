@@ -3,7 +3,7 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 // Vendors
-@import 'vendors/bootstrap-v5/scss/bootstrap';
+@import 'vendors/bootstrap-v4.1/bootstrap';
 // Base
 @import 'base/reset';
 @import 'base/typography';
@@ -11,9 +11,12 @@
 // Layout
 @import 'layout/header';
 @import 'layout/main-section';
-@import 'layout/forms';
+@import 'layout/persona';
+@import 'layout/descipcion';
+@import 'layout/persona';
+@import 'layout/indice';
+@import 'layout/footer';
 // Components
 @import 'components/buttons';
-@import 'components/inputs';
 // Pages
 // Theme

@@ -1,55 +1,7 @@
-/* Arreglando navegacion del header */
-.navegacion-fondo{
-    background-color: $earie-black;
-    text-align: center;
-    font-family: $roboto;
-    font-weight: $font-light;
-    font-size: $medium;
+/* Base Styles */
+body{
+    height:100vh;
+    background-color:$white;
+    background-position: 80%;
 }
-.navegacion__logo{
-    width: 78px;
-}
-.navegacion__container{
-    text-align: right;
-}
-
-
-
-
-/* .header{
-    padding-top: 4rem;
-    padding-left: 5rem;
-    background-color: $earie-black;
-    color: $white;
-    text-align: left;
-    font-family: $roboto;
-    font-weight: $font-regular;
-    font-size: $medium;
-}
-.header__logo{
-    width: 79px;
-    height: 46px;
-} */
-/* Main */
-/* .main__container{
-    top: 97px;
-    left: 0px;
-    height: 702px;
-    background-image: url("../images/post-image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
-    text-align: center;
-    font-family: $playfair;
-    font-weight: $font-black-italic;
-    font-size: $xx-large;
-    color: $white;
-}
-.main__title{
-    top: 322px;
-    left: 329px;
-    width: 634px;
-    height: 188px;
-}
- */
 
