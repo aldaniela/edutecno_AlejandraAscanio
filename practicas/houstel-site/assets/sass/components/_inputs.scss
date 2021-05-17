@@ -1,0 +1,21 @@
+/* Inputs */
+.form__label{
+    margin-top: .5rem;
+    padding-bottom: .3rem;
+    font-family: $open-sans;
+    font-size: $x-small;
+    color: $granite-gray;
+}
+.form__input-text,.form__input-date,.form__select{
+    height: 30px;
+    padding-left: 5px;
+    font-size: $small;
+    color: $old-silver
+}
+.form__input-text,.form__input-date{
+    border-radius: 5px;
+    border: 1px solid $gray;
+}
+.form__select{
+    background-color: $white;
+}

@@ -16,48 +16,61 @@
         <div class="logo">
             <img src="./assets/images/logo.png" alt="Logo de la pagina" class="logo_image">
         </div>
+        <!--Verificando boostrap  -->
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        
+        <button type="button" class="btn btn-link">Link</button>
+
     </header>
     <main class="main">
-        <div class="main_container">
-            <h1 class="main_title">
-                Disfruta de los paisajes del <span class="main_title-emphasis main_title-emphasis--size-xxl">Chile</span>
+        <div class="main__container">
+            <h1 class="main__title">
+                Disfruta de los paisajes del <span class="main__title-emphasis main__title-emphasis--size-xxl">Chile</span>
             </h1>
-            <div class="main_button">
+            <div class="main__button">
                 <button type="button" class="button button_positive">Más destinos</button>
             </div>
         </div>
     </main>
     <form class="form">
-        <div class="form_container">
-            <label class="form_label">Lugar u hotel</label>
-            <input type="text" class="form_input-text" placeholder="Escribe tu destino">
+        <div class="form__container">
+            <label class="form__label">Lugar u hotel</label>
+            <input type="text" class="form__input-text" placeholder="Escribe tu destino">
         </div>
-        <div class="form_container">
-            <label class="form_label">Fecha de llegada</label>
-            <input type="date" class="form_input-date">
+        <div class="form__container">
+            <label class="form__label">Fecha de llegada</label>
+            <input type="date" class="form__input-date">
         </div>
-        <div class="form_container">
-            <label class="form_label">Fecha de salida</label>
-            <input type="date" class="form_input-date">
+        <div class="form__container">
+            <label class="form__label">Fecha de salida</label>
+            <input type="date" class="form__input-date">
         </div>
-        <div class="form_container">
-            <label class="form_label">Tipo de alojamiento</label>
-            <select class="form_select">
+        <div class="form__container">
+            <label class="form__label">Tipo de alojamiento</label>
+            <select class="form__select">
                 <option value="1">Hotel</option>
                 <option value="2">Hostel</option>
                 <option value="3">Departamento</option>
             </select>
         </div>
-        <div class="form_container">
-            <label class="form_label">Habitaciones</label>
-            <select class="form_select">
+        <div class="form__container">
+            <label class="form__label">Habitaciones</label>
+            <select class="form__select">
                 <option value="1">1 habitación</option>
                 <option value="2">2 habitaciones</option>
                 <option value="3">3 habitaciones</option>
                 <option value="4">+ de 4</option>
             </select>
         </div>
-        <button type="submit" class="button button_default">Buscar</button>
+        <button type="submit" class="button form__button button_default">Buscar</button>
+
     </form>
 </body>
 </html>

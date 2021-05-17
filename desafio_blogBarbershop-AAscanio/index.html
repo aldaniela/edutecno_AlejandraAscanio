@@ -15,48 +15,99 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navegacion"></nav>
-            <div class="logo">
-                <img src="./assets/images/logo.png" alt="Logo de la pagina" class="logo_image">
+    <header class="navegacion">
+        <nav class="navbar navbar-expand-lg navbar-dark navegacion-fondo">
+            <div class="container navegacion__container">
+                <img class="image-responding navegacion__logo" src="./assets/images/logo.png" alt="Logo del sitio" loading="lazy">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="#Presentacion">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Destacados">Trabajo</a>
+                        </li>
+                        <li class="nav-item active nav-item header__item-seleccionado">
+                            <a class="nav-link" href="#HeroSection">Blog</a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacto">Horas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="navegacion_lista">
-                <li class="navegacion_item">Nosotros</li>
-            </ul>
         </nav>
     </header>
-    <main class="main">
-        <div class="main_container">
-            <h1 class="main_title">
-                5 formas de cuidar tu corte de cabello
-            </h1>
+    <section id="main" class="main">
+        <div class="container">
+            <h1>5 formas de cuidar tu corte de cabello</h1>
         </div>
-    </main>
-    <section id="descipcion" class="descripcion">
-        <h3 class="descipcion_title">12 de abril de 2018</h3>
-        <p class="descripcion_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc quam, eget scelerisque quam 
-            semper quis. Mauris maximus blandit lorem, sit amet condimentum eros auctor quis. In ut semper ipsum, nec condimentum est. Phasellus 
-            sodales, nunc vitae feugiat consequat, turpis velit euismod mi, eget scelerisque felis odio nec tortor. Ut nibh ex, tincidunt eu 
-            faucibus vel, sollicitudin ut velit. Fusce dapibus turpis massa, nec pellentesque libero porttitor eu. Fusce vel pellentesque augue. 
-            Cras finibus elit nec nisl vehicula, in interdum dolor volutpat. Duis arcu odio, aliquet non sapien vitae, scelerisque aliquam lorem. 
-            Suspendisse et sem tincidunt, tincidunt odio id, varius enim. Vestibulum faucibus augue id fringilla vulputate. Sed vitae magna eu enim 
-            pellentesque laoreet. Pellentesque id molestie eros. Nunc quam nisi, efficitur in scelerisque eu, lacinia vel erat. Suspendisse vel 
-            lobortis lectus, eu convallis mauris. Praesent id odio imperdiet, tincidunt ex a, aliquam libero. Duis ultricies nisi nulla, eget 
-            cursus nibh interdum tempus. Integer sodales tincidunt imperdiet. Aenean ornare at tortor sed facilisis. Nulla gravida turpis ac 
-            ullamcorper iaculis. Cras fringilla felis id nibh efficitur ornare. Aenean accumsan orci sit amet semper eleifend. 
-            Proin quis tortor ante. Cras fermentum urna a felis placerat, eget malesuada ipsum placerat. Fusce scelerisque, 
-            leo quis auctor lacinia, mauris justo porta enim, eget dictum nisi sapien eget ex. Fusce in eros purus. Fusce volutpat nisi purus, ac
-            vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. Praesent tincidunt convallis ipsum, 
-            quis convallis metus. Vivamus ac gravida lectus, eget ultricies nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            Nullam tristique pulvinar est at tristique. Vestibulum non blandit ex. Suspendisse ipsum justo, feugiat eu feugiat et, condimentum 
-            sit amet ipsum. Pellentesque eu vulputate dolor. Aliquam pretium arcu nec aliquet varius.</p>
-        <button type="button" class="descripcion_button">Compartir</button>
-        <button type="button" class="descripcion_button">Comentar en twitter</button>
+    </section>
+    <section id="descripcion" class="descripcion">
+        <div class="container">
+            <p class="descripcion__title">12 de abril de 2018</p>
+            <p class="descripcion__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc quam, eget scelerisque quam 
+                semper quis. Mauris maximus blandit lorem, sit amet condimentum eros auctor quis. In ut semper ipsum, nec condimentum est. Phasellus 
+                sodales, nunc vitae feugiat consequat, turpis velit euismod mi, eget scelerisque felis odio nec tortor. Ut nibh ex, tincidunt eu 
+                faucibus vel, sollicitudin ut velit. Fusce dapibus turpis massa, nec pellentesque libero porttitor eu. Fusce vel pellentesque augue. 
+                Cras finibus elit nec nisl vehicula, in interdum dolor volutpat. Duis arcu odio, aliquet non sapien vitae, scelerisque aliquam lorem. <br><br>
+                Suspendisse et sem tincidunt, tincidunt odio id, varius enim. Vestibulum faucibus augue id fringilla vulputate. Sed vitae magna eu enim 
+                pellentesque laoreet. Pellentesque id molestie eros. Nunc quam nisi, efficitur in scelerisque eu, lacinia vel erat. Suspendisse vel 
+                lobortis lectus, eu convallis mauris. Praesent id odio imperdiet, tincidunt ex a, aliquam libero. Duis ultricies nisi nulla, eget 
+                cursus nibh interdum tempus. Integer sodales tincidunt imperdiet. Aenean ornare at tortor sed facilisis. Nulla gravida turpis ac 
+                ullamcorper iaculis. Cras fringilla felis id nibh efficitur ornare. Aenean accumsan orci sit amet semper eleifend. <br><br>
+                Proin quis tortor ante. Cras fermentum urna a felis placerat, eget malesuada ipsum placerat. Fusce scelerisque, 
+                leo quis auctor lacinia, mauris justo porta enim, eget dictum nisi sapien eget ex. Fusce in eros purus. Fusce volutpat nisi purus, ac
+                vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. Praesent tincidunt convallis ipsum, 
+                quis convallis metus. Vivamus ac gravida lectus, eget ultricies nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                Nullam tristique pulvinar est at tristique. Vestibulum non blandit ex. Suspendisse ipsum justo, feugiat eu feugiat et, condimentum 
+                sit amet ipsum. Pellentesque eu vulputate dolor. Aliquam pretium arcu nec aliquet varius.</p>
+            <button type="button" class="btn btn-secondary">Compartir</button>
+            <button type="button" class="btn btn-secondary">Comentar en twitter</button>
+        </div>
     </section>
     <section id="persona" class="persona">
-        <img src="./assets/images/naomi-thai.png" alt="Foto Naomi" class="persona_image">
-        <h3 class="persona_title">Naomi Thai</h3>
-        <h4 class="persona_contacto">@Naothai <br>depelos.com</h4> 
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="./assets/images/naomi-thai.png" alt="Foto Naomi" class="persona__image">
+                </div>
+                <div class="col-4">
+                    <h3 class="persona__title">Naomi Thai</h3>
+                    <h4 class="persona__contacto">@Naothai <br>depelos.com</h4> 
+                </div>
+                <div class="col-4">
+                    <p class="persona__texto">Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. 
+                        Praesent tincidunt convallis ipsum, quis convallis metus.</p>
+                </div>
+            </div>
+        </div>
     </section>
+    <section id="indice" class="indice">
+        <div class="container">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Siguiente</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </section>
+    <footer class="cierre">
+        <img class="image-responding cierre__logo" src="./assets/images/logo.png" alt="Logo del sitio" loading="lazy">
+    </footer>
 </body>
 </html>

@@ -2,7 +2,7 @@
 // abstracts
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
-// Vendors
+@import 'vendors/boostrap_v4-1/scss/bootstrap';
 // Base
 @import 'base/reset';
 @import 'base/typography';
