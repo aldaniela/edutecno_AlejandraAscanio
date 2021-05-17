@@ -4,11 +4,17 @@
         @extend #{'.page-link', '.text-dark'};
     }
 }
+.page-item.active .page-link {
+    z-index: 1;
+    border-color: black;
+    background-color: $nickel;
+  }
+.indice__selector--izquierda{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: yellow;
+}
 .indice__selector--derecha{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-}
-.indice__selector--izquierda{
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
 }
