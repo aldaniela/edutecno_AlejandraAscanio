@@ -8,6 +8,7 @@
 }
 img{
     width: 100%;
+    
 }
 .navbar{
     background-color:green ;
@@ -16,7 +17,9 @@ img{
 }
 .main{
     padding-top: 70px;
-    display: flex;
+/*     display: flex; */
+
+
 }
 .texto-anterior{
     margin: 0;
