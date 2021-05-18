@@ -8713,24 +8713,6 @@ main h1 {
         grid-template-columns: 1fr;
     }
 } */
-.persona {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-align: left;
-}
-
-.persona__image {
-  width: 177px;
-}
-
-.persona__title {
-  padding-top: 30px;
-}
-
-.persona__texto {
-  padding: 50px 0;
-}
-
 .descripcion {
   text-align: left;
   margin-top: 75px;

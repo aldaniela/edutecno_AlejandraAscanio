@@ -1,0 +1,42 @@
+/* Clase de la navbar*/
+.navbar-brand{
+    font-size: 40px;
+    font-family: 'Oswald';
+    font-weight: bold;
+} 
+@media (max-width: 576px) {
+    .navbar-brand{
+        font-size: 30px;
+        font-family: 'Oswald';
+        font-weight: bold;
+    } 
+}
+/*Fondo Negro*/
+#Presentacion,#Destacados,#Contacto{
+    background-color: black;
+}
+#Destacados h5{
+    font-family: 'Oswald';
+    font-weight: 200;
+}
+#Destacados hr{
+    width: 80%;
+    height: 3px;
+}
+/* Ajustando el tamaño del carousel */
+.carousel .carousel-inner{
+    height:750px;
+}
+.carousel-item img{
+    height: 750px;
+    top: 0;
+}
+
+@media(max-width:576px){
+    .carousel .carousel-inner{
+        height:auto
+     }
+     .carousel-item img{
+        height: auto;
+    }
+} 

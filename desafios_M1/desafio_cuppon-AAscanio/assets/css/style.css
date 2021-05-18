@@ -1,0 +1,23 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h4{
+    font-weight: 300;
+}
+p{
+    color:#707070;
+    font-weight: 300;
+}
+.texto-roboto-m{
+    font-weight: 500;
+}
+.texto-roboto-l{
+    font-weight: 300;
+}
+h5{
+    font-weight: 500;
+    color: white;
+}
+.precio-descuento{
+    display: inline;
+}

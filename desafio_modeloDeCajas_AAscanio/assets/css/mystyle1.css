@@ -1,0 +1,25 @@
+.box{
+    display: inline-block;
+    width: 25%;
+    padding: 5px;
+    height: max-content;
+    text-align: center;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.navbar{
+    background-color:green ;
+    position: fixed;
+    margin-top: -5px;
+}
+.main{
+    padding-top: 70px;
+    display: flex;
+}
+.texto-anterior{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}

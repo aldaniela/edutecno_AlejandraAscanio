@@ -1,0 +1,31 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-color{
+    background: #E83E8C;
+    color: white;
+}
+h1{
+    font-weight: bold;
+    color: #707070;
+    text-align: center;
+
+}
+.footer-color1{
+    background: #E83E8C;
+}
+.footer-color2{
+    background:#17A2B8;
+    color: white;
+    font-weight: bold;
+}
+.logo-foot{
+    height: auto;
+    width: 30px;
+}
+h5{
+    font-weight: bold;
+}
+.bordersCustom {
+border: 1px solid black;
+}
