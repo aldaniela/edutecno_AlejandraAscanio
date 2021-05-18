@@ -9,12 +9,11 @@
     border-color: black;
     background-color: $nickel;
   }
-.indice__selector--izquierda{
+.page-item:last-child .page-link, .page-item:last-child .indice a, .indice .page-item:last-child a {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.page-item:first-child .page-link, .page-item:first-child .indice a, .indice .page-item:first-child a {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
-    background-color: yellow;
-}
-.indice__selector--derecha{
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
 }
