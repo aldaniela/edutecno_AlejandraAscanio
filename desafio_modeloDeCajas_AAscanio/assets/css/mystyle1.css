@@ -5,24 +5,15 @@
     height: max-content;
     text-align: center;
     box-sizing: border-box;
+    /* Para corregir bug de la vista */
+    margin-right: -5px;
 }
 img{
     width: 100%;
-    
 }
 .navbar{
     background-color:green ;
     position: fixed;
-    margin-top: -5px;
+    margin-top:-16px;
 }
-.main{
-    padding-top: 70px;
-/*     display: flex; */
 
-
-}
-.texto-anterior{
-    margin: 0;
-    padding: 0;
-    height: 50px;
-}

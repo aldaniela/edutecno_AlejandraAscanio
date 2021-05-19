@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.bandera{
+    width: 500px;
+    height: 300px;
+    background-color:white ;
+    margin: 20px;
+    display: inline-block;
+    border-color: gray;
+    border: 2px solid #808080;
+}
+/* España */
+.rec__esp--rojo{
+    background-color: red;
+    height: 75px;
+}
+.rec__esp--amarillo{
+    background-color: yellow;
+    height: 150px;
+}
+/* Dinamarca */
+.bandera--rojo{
+    background-color: red;
+}
+.rec__din--hor{
+    height: 20px;
+    background-color: white;
+    margin: 140px 0;
+}
+.rec__din--ver{
+    height: 300px;
+    background-color: white;
+    width: 20px;
+    position: absolute;
+    margin: 0 240px;
+}
+/* Emiratos */
+.rec__emir--rojo{
+    background-color: red;
+    height: 300px;
+    width: 100px;
+    position: absolute;
+}
+.rec__emir--verde{
+    background-color: green;
+    height: 33.33%;
+}
+.rec__emir--blanco{
+    background-color: white;
+    height: 33.33%; 
+}
+.rec__emir--negro{
+    background-color:black;
+    height: 33.33%;
+}
+/* Japon */
+.circulo__japon{
+    background-color: red;
+    height: 100px;
+    width: 90px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 100px 210px;
+}
