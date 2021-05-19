@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.imagen__principal{
+    position: absolute;
+    z-index: -1;
+}
+.imagen__ribon{
+    position: absolute;
+}
