@@ -15,5 +15,6 @@ img{
     background-color:green ;
     position: fixed;
     margin-top:-16px;
+    width: 150%;
 }
 
