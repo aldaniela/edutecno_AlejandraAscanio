@@ -1,0 +1,62 @@
+.navbar{
+    font-family: $raleway;
+    font-weight: $font-bold;
+    li a{
+        text-decoration: none;
+        color: $smoky-black;
+        font-size: $x-large;
+    }
+}
+.navbar__logo{
+    color: $white;
+    font-family: $raleway;
+    font-weight: $font-bold;
+    font-size: $xx-large;
+}
+.navbar__mobile-menu{
+    color: $smoky-black;
+}
+.main__title{
+    font-family: $old-standard;
+    text-align: left;
+    h1{
+        text-transform: uppercase;
+        font-weight: $font-bold;
+        font-size: $xxx-large;
+    }
+    p{
+        font-size: $x-large;
+        color: $granite-gray;
+    }
+}
+.main__button{
+    font-size: $medium;
+}
+.main__newsletter{
+    color: $white;
+}
+.main__newsletter{
+    font-family: $old-standard;
+}
+.main__subscribe{
+    color: $smoky-black;
+    text-align: center;
+    font-family: $old-standard;
+}
+/* Para mobiles */
+@media only screen and (max-width: 768px){
+    .main__title{
+        h1{
+            font-size: $xx-large;
+        }
+        p{
+            font-size: $medium;
+        }
+    }
+    .main__subscribe{
+        color: $smoky-black;
+        text-align: center;
+        font-size: $small;
+    }
+}
+

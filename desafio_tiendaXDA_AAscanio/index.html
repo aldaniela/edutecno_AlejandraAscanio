@@ -5,46 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alejandra Ascanio">
-    <meta name="description" content="Ejercicio 8">
-    <meta name="keywords" content="desafio, box, posicionamiento">
-    <title>Ejercicio 8</title>
-    <style media= "screen" type= "text/css">
-        html,body{
-            margin: 0;
-            padding: 0;
-        }
-        ul.menu{
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        ul.menu li {
-            background : olive;
-            box-sizing : border-box;
-            float : left;
-            width : 25% ;
-        }
-        ul.menu li a {
-            color : #FFF ;
-            display : block;
-            padding : 10px ;
-            text-decoration : none;
-        }
-        ul.menu li a:hover{
-            background : #000 ;
-        }
-    </style >
-    <!-- Mis estilos -->
-    <link href="./assets/css/mystyle8.css" rel="stylesheet">
+    <meta name="description" content="Tienda XDA">
+    <meta name="keywords" content="tienda, XDA, ropa">
+    <title>Tienda XDA</title>
+    <!-- Estilos de Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- Mi estilo compilado de SaSS-->
+    <link href="./assets/css/main.css" rel="stylesheet">
 </head>
 <body>
-    <ul class="menu">
-        <li><a href="#">Item-1</a></li>
-        <li><a href="#">Item-2</a></li>
-        <li><a href="#">Item-3</a></li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-    aperiam omnis magni aut voluptas dignissimos, sunt quis at in ducimus
-    quo, vitae ex ullam suscipit. Deleniti animi nulla eos culpa!</p>
+    <nav class="navbar">
+        <a class="navbar__logo">XDA</a>
+        <div class="navbar__menu">
+            <ul>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <a class="navbar__mobile-menu">
+            <i class="fa fa-bars fa-2x"></i>
+        </a>
+    </nav>
+    <div class="main">
+        <div class="main__image">
+            <img src="./assets/img/imagen1.png" alt="Foto del Site">
+        </div>
+        <div class="main__title">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusantium modi, at quidem commodi, hic quo tenetur laudantium minima sit saepe, quia rem. Aliquid odit est, quidem quos corporis veniam!</p>
+            <button class="main__button">Ir a tienda</button>
+        </div>
+        <div class="main__subscribe">
+            <h2>Suscribir</h2>
+        </div>
+        <div class="main__newsletter">
+            <br><br>
+            <h2>Newsletter</h2>
+            <form>
+                <label for="email">Correo Electrónico</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+            </form>
+        </div>
+<!--         <div class="bloque1">Bloque1</div>
+        <div class="bloque2">Bloque2</div>
+        <div class="bloque3">Bloque3</div>
+        <div class="bloque4">Bloque4</div> -->
+    </div>
 </body>
 </html>

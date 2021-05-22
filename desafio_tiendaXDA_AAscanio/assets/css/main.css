@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #0C0910;
+  font-size: 20px;
+}
+
+.navbar__logo {
+  color: #FFF;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.navbar__mobile-menu {
+  color: #0C0910;
+}
+
+.main__title {
+  font-family: "Old Standard TT", serif;
+  text-align: left;
+}
+.main__title h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+}
+.main__title p {
+  font-size: 20px;
+  color: #646266;
+}
+
+.main__button {
+  font-size: 16px;
+}
+
+.main__newsletter {
+  color: #FFF;
+}
+
+.main__newsletter {
+  font-family: "Old Standard TT", serif;
+}
+
+.main__subscribe {
+  color: #0C0910;
+  text-align: center;
+  font-family: "Old Standard TT", serif;
+}
+
+/* Para mobiles */
+@media only screen and (max-width: 768px) {
+  .main__title h1 {
+    font-size: 30px;
+  }
+  .main__title p {
+    font-size: 16px;
+  }
+
+  .main__subscribe {
+    color: #0C0910;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+/* Base Styles */
+body {
+  height: 100vh;
+  background-color: #FFF;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #FFF;
+}
+
+.navbar__menu ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+.navbar__menu ul li {
+  float: right;
+}
+.navbar__menu ul li a {
+  display: block;
+  padding: 8px;
+}
+
+.navbar__logo {
+  background-color: #0C0910;
+  float: left !important;
+  padding: 1%;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .navbar i {
+    float: right;
+    padding: 8px;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+}
+/* Para tablets y tamaños superiores */
+@media only screen and (min-width: 768px) {
+  .navbar__mobile-menu {
+    display: none;
+  }
+}
+.main {
+  position: relative;
+  top: 10%;
+  height: max-content;
+  box-sizing: border-box;
+  height: 100%;
+  z-index: -5;
+}
+
+.main__title {
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  z-index: -2;
+}
+.main__title button {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+.main__title p {
+  margin-left: 10%;
+  margin-right: 30%;
+}
+.main__title h1 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.main__image {
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  z-index: -1;
+}
+.main__image img {
+  height: 100%;
+  width: 100%;
+}
+
+.main__newsletter {
+  background-color: #0C0910;
+  position: absolute;
+  top: 60%;
+  width: 40%;
+  height: 40%;
+  z-index: -3;
+}
+.main__newsletter h2 {
+  margin-left: 50px;
+}
+.main__newsletter form {
+  margin-left: 50px;
+}
+
+.main form input {
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.main__subscribe {
+  position: absolute;
+  z-index: -2;
+  transform: rotate(90deg);
+  left: 24.5%;
+  bottom: 22%;
+  background-color: #FFF;
+  width: 29%;
+}
+
+/* Para Tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1367px) {
+  .main__image {
+    position: relative;
+    width: 100%;
+    height: 50%;
+  }
+
+  .main__title {
+    position: relative;
+    width: 100%;
+    height: 5%;
+    margin-bottom: 0%;
+  }
+
+  .main__newsletter {
+    position: relative;
+    width: 100%;
+  }
+
+  .main__subscribe {
+    bottom: -42%;
+    left: 80%;
+    width: 35%;
+  }
+}
+/* Para mobiles */
+@media only screen and (max-width: 768px) {
+  .main__image {
+    position: relative;
+    width: 100%;
+    height: 50%;
+  }
+
+  .main__title {
+    position: relative;
+    width: 100%;
+    height: 1%;
+    margin-bottom: -30%;
+  }
+
+  .main__newsletter {
+    position: relative;
+    width: 100%;
+    height: 30%;
+  }
+
+  .main__subscribe {
+    bottom: 1%;
+    left: 72%;
+    width: 48%;
+  }
+}
+.main__button {
+  border: 2px solid #0C0910;
+  padding: 12px 28px;
+  display: inline-block;
+  background-color: #FFF;
+}
+
+input[type=email] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=main.css.map */
