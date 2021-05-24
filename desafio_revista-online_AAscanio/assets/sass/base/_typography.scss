@@ -1,0 +1,49 @@
+.navbar{
+    text-transform: uppercase;
+    font-weight: $font-regular;
+    font-size: $medium;
+}
+.navbar__logo{
+    font-size: $x-large;
+    font-weight: $font-bold;
+}
+.main-section h2{
+    font-size: $large;
+}
+.main-section__panel{
+    text-align: left;
+    h1{
+        font-size: $large;
+    }
+    p{
+        font-size: $small;
+    }
+}
+.main-section__tags{
+    ul li{
+        font-size: $x-small;
+    }
+}
+.main-section__destacados{
+    h4{
+        font-size: $small;
+    }
+}
+.subscribe{
+    text-align: center;
+    button{
+        color: white;
+    }
+    h2{
+        font-size: $large;
+    }
+}
+.footer{
+    text-align: center;
+    font-size: $small;
+}
+@media (min-width: 768px) {
+    .navbar{
+        font-size: $x-small;
+    }
+}
