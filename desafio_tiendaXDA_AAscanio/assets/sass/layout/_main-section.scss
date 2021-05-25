@@ -49,19 +49,40 @@
     form{
         margin-left: 50px;
     }
+/*     h5{
+        position: absolute;
+        background-color: white;
+        color: black;
+        transform-origin: 0 0;
+        transform: rotate(90deg);
+        text-align: center;
+        margin: 0px 0px;
+        float: right;
+        padding: 0px 200px;
+
+    } */
 }
 .main form input{
     width: 80%;
     margin-bottom: 50px;;
 }
-.main__subscribe{
-    position: absolute;
+.main__subscribe h2{
+/*  position: absolute;
     z-index: -2;
     transform: rotate(90deg);
     left: 24.5%;
     bottom: 22%;
-    background-color:$white;
-    width: 29%;
+    width: 29%; */
+    z-index: 3;
+    background-color: green;
+    /* margin: 43.5% 50.2%; */
+    /* transform: rotate(90deg); */
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+    
 }
 /* Para Tablets*/
 @media only screen and (min-width: 768px) and (max-width: 1367px){

@@ -34,9 +34,10 @@
 }
 .main__newsletter{
     color: $white;
-}
-.main__newsletter{
     font-family: $old-standard;
+    h5{
+        font-size: $x-large;
+    }
 }
 .main__subscribe{
     color: $smoky-black;

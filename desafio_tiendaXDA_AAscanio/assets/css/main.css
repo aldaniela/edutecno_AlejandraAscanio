@@ -50,10 +50,10 @@ img {
 
 .main__newsletter {
   color: #FFF;
-}
-
-.main__newsletter {
   font-family: "Old Standard TT", serif;
+}
+.main__newsletter h5 {
+  font-size: 20px;
 }
 
 .main__subscribe {
@@ -88,6 +88,7 @@ body {
   top: 0;
   width: 100%;
   color: #FFF;
+  background-color: #FFF;
 }
 
 .navbar__menu ul {
@@ -123,6 +124,12 @@ section::after {
 
   .navbar__menu {
     display: none;
+  }
+
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 /* Para tablets y tamaños superiores */
@@ -179,6 +186,18 @@ section::after {
   width: 40%;
   height: 40%;
   z-index: -3;
+  /*     h5{
+          position: absolute;
+          background-color: white;
+          color: black;
+          transform-origin: 0 0;
+          transform: rotate(90deg);
+          text-align: center;
+          margin: 0px 0px;
+          float: right;
+          padding: 0px 200px;
+
+      } */
 }
 .main__newsletter h2 {
   margin-left: 50px;
@@ -192,14 +211,22 @@ section::after {
   margin-bottom: 50px;
 }
 
-.main__subscribe {
+.main__subscribe h2 {
+  /*  position: absolute;
+      z-index: -2;
+      transform: rotate(90deg);
+      left: 24.5%;
+      bottom: 22%;
+      width: 29%; */
+  z-index: 3;
+  background-color: green;
+  /* margin: 43.5% 50.2%; */
+  /* transform: rotate(90deg); */
   position: absolute;
-  z-index: -2;
+  top: 100px;
+  left: 100px;
+  transform-origin: 0 0;
   transform: rotate(90deg);
-  left: 24.5%;
-  bottom: 22%;
-  background-color: #FFF;
-  width: 29%;
 }
 
 /* Para Tablets*/
