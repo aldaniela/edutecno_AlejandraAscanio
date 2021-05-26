@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilla</title>
+    <!-- Font Awesome Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <style media="screen">
+        .item {
+            border: 1px solid black;
+            font-family: monospace;
+            font-size: 3rem;
+            background-color: gold;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 30px 20px;
+        }
+        .item-1{
+            grid-column-start: 1;
+            grid-column: span 4;
+        }
+        .item-2{
+            grid-column-start: 2;
+            grid-column: span 3;
+        }
+        .item-3{
+            grid-column-start: 1;
+            grid-column: span 2;
+        }
+    </style>
+    <link rel="stylesheet" href="main.css">
+    <script src="./modernizr-custom.js"></script>
+</head>
+<body>
+    <!-- Header -->
+<header class="header">
+    <!-- Navigation -->
+    <nav class="navigation row">
+        <div class="navigation__logo">
+           <img src="logo.png" alt="Logo heladerías Doñihue">
+        </div>
+        <div class="collapsible col-xs-12">
+            <input type="checkbox" id="menu">
+            <label for="menu"><i class="fas fa-bars"></i></label>
+            <div class="navigation__container">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#">Nosotros</a></li>
+                <li class="navigation__item"><a href="#">Heladerías</a></li>
+                <li class="navigation__item"><a href="#">Noticias</a></li>
+                <li class="navigation__item"><a href="#">Contacto</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>     
+</body>
+</html>

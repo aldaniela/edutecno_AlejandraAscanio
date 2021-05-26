@@ -1,0 +1,11 @@
+#contenedor {
+    background: red;
+    display: flex;
+    width: 200px;
+    flex-wrap: nowrap;
+}
+
+.item {
+    background: green;
+    width: 50%;
+}
