@@ -8643,17 +8643,27 @@ body {
     margin: 0 auto;
   }
 }
-.navegacion {
-  background: blue;
-}
-
+/* .navegacion__icons {
+    text-align: right;
+    i {
+        margin: 0px .5rem;
+    }
+} */
 .navegacion__icons {
-  text-align: right;
+  background-color: grey;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.navegavion__barra {
+.item {
+  width: 20px;
+}
+
+.navegacion__menu {
+  background-color: hotpink;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-content: flex-end;
 }
 
 .navegacion--fondo {
