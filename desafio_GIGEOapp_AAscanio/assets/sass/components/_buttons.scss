@@ -1,0 +1,9 @@
+.descripcion__button{
+    border-radius: 12px;
+    margin-left: 15px;
+    &:hover {
+        background-color: $fuzzy-wuzzy;
+        border-color: $fuzzy-wuzzy;
+        }
+        
+}

@@ -1,0 +1,19 @@
+.indice{
+    a{
+        @extend #{'.page-link', '.bg-light'};
+        @extend #{'.page-link', '.text-dark'};
+    }
+}
+.page-item.active .page-link {
+    z-index: 1;
+    border-color: black;
+    background-color: $nickel;
+  }
+.page-item:last-child .page-link, .page-item:last-child .indice a, .indice .page-item:last-child a {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.page-item:first-child .page-link, .page-item:first-child .indice a, .indice .page-item:first-child a {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
