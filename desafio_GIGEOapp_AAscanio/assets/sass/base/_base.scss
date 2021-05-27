@@ -1,7 +1,17 @@
 /* Base Styles */
-body{
-    height:100vh;
-    background-color:$white;
-    background-position: 80%;
+
+body {
+    height: 100vh;
+    background-color: $white;
+    box-sizing: border-box;
 }
 
+
+/* Definir ancho fijo en tamaños grandes */
+
+@media only screen and (min-width: 1200px) {
+    body {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
