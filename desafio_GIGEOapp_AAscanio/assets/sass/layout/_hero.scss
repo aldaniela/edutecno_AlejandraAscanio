@@ -1,16 +1,50 @@
 .hero {
-    background-image: url("../img/image-banner.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 10vh;
+    img {
+        width: 100%;
+        max-height: 40px;
+        object-fit: cover;
+    }
 }
 
 
 /* Altura de la imagen para pantallas mayores a 960px Large */
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 300px) {
     .hero {
-        height: 25vh;
+        img {
+            max-height: 55px;
+        }
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .hero {
+        img {
+            max-height: 90px;
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .hero {
+        img {
+            max-height: 100px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        img {
+            max-height: 160px;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .hero {
+        img {
+            max-height: 200px;
+        }
     }
 }
