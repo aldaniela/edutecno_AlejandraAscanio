@@ -7,6 +7,13 @@ body {
 }
 
 
+/* Ajuste del hr, division despues de la informacion del autor*/
+
+.division {
+    border: 1px solid grey;
+}
+
+
 /* Definir ancho fijo en tamaños grandes */
 
 @media only screen and (min-width: 1200px) {

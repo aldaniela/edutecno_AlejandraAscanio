@@ -9,13 +9,11 @@
 @import 'base/base';
 // Layout
 @import 'layout/navegacion';
-@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/author';
 @import 'layout/main-section';
-@import 'layout/descripcion';
-@import 'layout/persona';
-@import 'layout/indice';
-@import 'layout/footer';
 // Components
+@import 'components/thumbnails';
 @import 'components/buttons';
 // Pages
 // Theme

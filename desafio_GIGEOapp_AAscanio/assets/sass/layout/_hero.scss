@@ -1,0 +1,16 @@
+.hero {
+    background-image: url("../img/image-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
+}
+
+
+/* Altura de la imagen para pantallas mayores a 960px Large */
+
+@media only screen and (min-width: 960px) {
+    .hero {
+        height: 25vh;
+    }
+}

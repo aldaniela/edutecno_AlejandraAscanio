@@ -1,3 +1,21 @@
-.navegacion__logo {
-    text-transform: uppercase;
-}
+    .navegacion__logo {
+        text-transform: uppercase;
+        font-family: $roboto;
+        font-weight: $font-black;
+    }
+    /* Edito clase de bootstrap para agrandar el texto de mi logo */
+    
+    .navbar-brand {
+        font-size: $x-large;
+        sup {
+            vertical-align: super;
+            font-size: $small;
+        }
+    }
+    
+    .videos {
+        text-align: left;
+        p {
+            color: $nickel;
+        }
+    }

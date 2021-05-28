@@ -1,23 +1,25 @@
-/* .navegacion__icons {
-    text-align: right;
-    i {
-        margin: 0px .5rem;
-    }
-} */
-
 .navegacion__icons {
-    background-color: grey;
     display: flex;
-    flex-direction: row-reverse;
-}
-
-.item {
-    width: 20px;
-}
-
-.navegacion__menu {
-    background-color: hotpink;
-    display: flex;
-    justify-content: flex-end;
     align-content: flex-end;
+    i {
+        margin: 0px .3rem;
+    }
+}
+
+
+/* Modificando la hamburguesa de bootstrap para que no tenga borde */
+
+.navbar-light .navbar-toggler {
+    border: none
+}
+
+
+/* Para media a partir de 720 para Medium */
+
+@media (min-width: 720px) {
+    .navegacion__icons {
+        i {
+            margin: 0px .5rem;
+        }
+    }
 }

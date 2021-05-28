@@ -1,9 +1,15 @@
-.descripcion__button{
-    border-radius: 12px;
-    margin-left: 15px;
+.author__buttons-blue {
+    background-color: $blue;
+    color: $white;
     &:hover {
-        background-color: $fuzzy-wuzzy;
-        border-color: $fuzzy-wuzzy;
-        }
-        
+        background-color: $light-blue;
+    }
+}
+
+.author__buttons-red {
+    background-color: $ruddy-pink;
+    color: $white;
+    &:hover {
+        background-color: $spanish-pink;
+    }
 }
