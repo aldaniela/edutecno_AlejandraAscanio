@@ -1,0 +1,17 @@
+.navbar {
+    background-color: $black;
+    box-sizing: border-box;
+    color: $orange;
+    ul {
+        list-style-type: none;
+        float: right;
+        li {
+            display: inline;
+            a {
+                text-decoration: none;
+                padding: 0 10px;
+                color: $orange;
+            }
+        }
+    }
+}

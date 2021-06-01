@@ -1,0 +1,13 @@
+footer {
+    ul {
+        list-style-type: none;
+        li {
+            display: inline;
+            a {
+                text-decoration: none;
+                padding: 0 10px;
+                color: $orange;
+            }
+        }
+    }
+}
