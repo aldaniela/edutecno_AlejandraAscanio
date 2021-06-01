@@ -1,0 +1,62 @@
+    /* div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+
+div:hover {
+    width: 300px;
+} */
+    /* Cambiar de color el fondo de la estrella */
+    /* .estrella {
+    fill: lime;
+    stroke: blue;
+    stroke-width: 5;
+    transition: fill 2s;
+}
+
+.estrella:hover {
+    fill: red;
+} */
+    
+    .estrella {
+        fill: line;
+        stroke: blue;
+        stroke-width: 5;
+        transition: fill 2s, stroke 5s, transform 2s;
+        transition-delay: 3s;
+    }
+    
+    .estrella:hover {
+        fill: red;
+        stroke: orange;
+        transform: scale(0.7)
+    }
+    /* Estilos del svg */
+    
+    .ampolla {
+        fill: #EFCE4A;
+    }
+    
+    .reflejo {
+        fill: #F7E6A1;
+    }
+    
+    .casquillo {
+        fill: #556080;
+    }
+    /* Animacion en css */
+    
+    @keyframes mover {
+        0% {
+            margin-left: 0
+        }
+        100% {
+            margin-left: 10em;
+        }
+    }
+    
+    .button {
+        animation: mover 3s ease-in-out 0s infinite;
+    }
