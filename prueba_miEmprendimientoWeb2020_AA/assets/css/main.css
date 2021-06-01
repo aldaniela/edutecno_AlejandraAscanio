@@ -1,0 +1,17 @@
+/* Base Styles */
+body {
+  height: 100vh;
+  background-color: #FFFFFF;
+}
+
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
