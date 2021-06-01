@@ -1,16 +1,30 @@
 .navbar {
-    background-color: $black;
     box-sizing: border-box;
+    background-color: $black;
     color: $orange;
-    ul {
-        list-style-type: none;
-        float: right;
-        li {
-            display: inline;
-            a {
-                text-decoration: none;
-                padding: 0 10px;
-                color: $orange;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    height: 70px;
+    &__logo img {
+        flex: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    &__menu {
+        flex: 50%;
+        display: flex;
+        justify-content: flex-end;
+        ul {
+            list-style-type: none;
+            li {
+                display: inline;
+                a {
+                    text-decoration: none;
+                    padding: 0 10px;
+                    color: $orange;
+                }
             }
         }
     }

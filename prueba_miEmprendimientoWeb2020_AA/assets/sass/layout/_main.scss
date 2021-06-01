@@ -1,0 +1,46 @@
+.main {
+    background-color: $white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    &__cursos {
+        padding: 10px;
+        border: 1px solid $black;
+        text-align: left;
+    }
+    &__resumen {
+        border: 1px solid $charcoal;
+        padding: 50px;
+        width: 100%;
+        img {
+            border-radius: 50%;
+            border-radius: 1px solid $black;
+            max-width: 150px;
+        }
+        p,
+        ul {
+            text-align: left;
+        }
+        &-division {
+            background-color: grey;
+            color: $white;
+            width: 100%;
+            line-height: 30px;
+        }
+    }
+}
+
+.main__cursos-bloque {
+    border: 1px solid $charcoal;
+    border-style: dotted;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.main__cursos-logos {
+    color: $orange;
+    display: inline;
+    i {
+        padding: 0 5px;
+    }
+}

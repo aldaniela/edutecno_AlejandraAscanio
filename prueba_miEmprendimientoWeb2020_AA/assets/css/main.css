@@ -36,7 +36,7 @@ img {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 /*======================================================================
@@ -245,37 +245,119 @@ img {
   }
 }
 .navbar {
-  background-color: #000000;
   box-sizing: border-box;
+  background-color: #000000;
   color: #FFA500;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  height: 70px;
 }
-.navbar ul {
+.navbar__logo img {
+  flex: 50%;
+  width: 40px;
+  height: 40px;
+}
+.navbar__menu {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar__menu ul {
   list-style-type: none;
-  float: right;
 }
-.navbar ul li {
+.navbar__menu ul li {
   display: inline;
 }
-.navbar ul li a {
+.navbar__menu ul li a {
   text-decoration: none;
   padding: 0 10px;
   color: #FFA500;
 }
 
-header {
+.header {
+  background: url("../img/desarrolloweb2021t.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 165px;
+  width: 100%;
+}
+
+.main {
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
-
-footer ul {
-  list-style-type: none;
+.main__cursos {
+  padding: 10px;
+  border: 1px solid #000000;
+  text-align: left;
 }
-footer ul li {
+.main__resumen {
+  border: 1px solid #2E1503;
+  padding: 50px;
+  width: 100%;
+}
+.main__resumen img {
+  border-radius: 50%;
+  border-radius: 1px solid #000000;
+  max-width: 150px;
+}
+.main__resumen p,
+.main__resumen ul {
+  text-align: left;
+}
+.main__resumen-division {
+  background-color: grey;
+  color: #FFFFFF;
+  width: 100%;
+  line-height: 30px;
+}
+
+.main__cursos-bloque {
+  border: 1px solid #2E1503;
+  border-style: dotted;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.main__cursos-logos {
+  color: #FFA500;
   display: inline;
 }
-footer ul li a {
+.main__cursos-logos i {
+  padding: 0 5px;
+}
+
+.footer {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.footer__copy {
+  text-align: left;
+  padding: 30px;
+  margin-left: 50px;
+}
+.footer__menu {
+  text-align: center;
+  padding: 20px;
+}
+.footer__menu ul {
+  list-style-type: none;
+}
+.footer__menu ul li {
+  display: inline;
+}
+.footer__menu ul li a {
   text-decoration: none;
   padding: 0 10px;
   color: #FFA500;
+}
+.footer__form {
+  padding: 30px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
