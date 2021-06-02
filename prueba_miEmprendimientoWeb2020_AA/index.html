@@ -19,16 +19,19 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar container">
         <div class="navbar__logo">
             <img src="./assets/img/logo.svg" alt="Logo">
         </div>
         <div class="navbar__menu">
-            <ul>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Precios</a></li>
-            </ul>
+            <input type="checkbox" id="menu">
+            <div class="navbar__list">
+                <ul>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Precios</a></li>
+                </ul>
+            </div>
             <label for="menu"><i class="fa fa-bars fa-2x"></i></label>
         </div>
     </nav>
@@ -38,7 +41,7 @@
     <main class="main container">
         <div class="row">
             <!-- Curso HTML y CSS/SaSS -->
-            <div class="main__cursos col-sm-6">
+            <div class="main__cursos col-xs-12 col-sm-6">
                 <div class="main__cursos-bloque">
                     <img src="./assets/img/html-y-cssb-.jpg" alt="Curso HTML y CSS">
                     <h3>HTML y CSS para principiantes</h3>
@@ -69,7 +72,7 @@
                 </div>
             </div>
             <!-- Resumen de cursos -->
-            <div class="main__resumen col-sm-6">
+            <div class="main__resumen col-xs-12 col-sm-6">
                 <img src="./assets/img/web-development.png" alt="Imagen developer">
                 <h3>Cursos 2020 LTDA</h3>
                 <div class="main__cursos-logos">
@@ -95,7 +98,7 @@
                     <li>VueJs (1)</li>
                 </ul>
                 <!-- Imagen con animacion -->
-                <div>
+                <div class="main__animacion">
                     <svg viewBox="-2 0 511 512">
                         <path d="m415.433594 460.488281h-257.460938c-13.511718 0-24.460937-10.949219-24.460937-24.460937v-404.066406c0-13.507813 10.949219-24.460938 24.460937-24.460938h257.460938c13.507812 0 24.460937 10.953125 24.460937 24.460938v404.066406c0 13.511718-10.953125 24.460937-24.460937 24.460937zm0 0" fill="#426175"/>
                         <path d="m415.433594 7.5h-48.25c13.507812 0 24.460937 10.953125 24.460937 24.460938v404.066406c0 13.511718-10.953125 24.464844-24.460937 24.464844h48.25c13.507812 0 24.460937-10.953126 24.460937-24.464844v-404.066406c0-13.507813-10.953125-24.460938-24.460937-24.460938zm0 0" fill="#2c4456"/>
@@ -118,19 +121,19 @@
     </main>
     <footer class="footer">
         <div class="row">
-            <div class="col-sm-8 footer__copy">
+            <div class="col-xs-12 col-sm-6 footer__copy">
                 <small>&copy;2021 | Todos los derechos reservados</small>
             </div>
-            <div class="footer__menu col-sm-2">
+            <div class="footer__menu col-xs-12 col-sm-3">
                 <ul>
                     <li><a href="#">Legal</a></li>
                     <li><a href="#">Sobre Anuncios</a></li>
                 </ul>
             </div>
-            <div class="col-sm-2">
+            <div class="col-xs-12 col-sm-3">
                 <form class="footer__form">
                     <input type="email" id="email" name="email" value="e-mail">
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" class="footer__enviar">
                 </form>
             </div>
         </div>

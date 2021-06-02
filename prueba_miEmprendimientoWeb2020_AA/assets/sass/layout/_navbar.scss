@@ -1,12 +1,11 @@
 .navbar {
-    box-sizing: border-box;
-    background-color: $black;
-    color: $orange;
     display: flex;
-    align-items: center;
+    background-color: $black;
+    box-sizing: border-box;
+    color: $orange;
     width: 100%;
+    margin-bottom: 15px;
     padding: 20px;
-    height: 70px;
     &__logo img {
         flex: 50%;
         width: 40px;
@@ -24,8 +23,66 @@
                     text-decoration: none;
                     padding: 0 10px;
                     color: $orange;
+                    &:hover {
+                        color: hotpink;
+                    }
                 }
             }
         }
     }
 }
+
+
+/* Control del boton de hamburguesa del menu */
+
+.navbar__menu label {
+    display: block;
+    cursor: pointer;
+}
+
+input#menu {
+    display: none;
+}
+
+.navbar__list {
+    max-height: 0;
+    overflow: hidden;
+}
+
+
+/* Toggle Effect */
+
+input:checked~.navbar__list {
+    max-height: 100%;
+}
+
+
+/* Media queries para quitar el boton y mostrar el menu */
+
+@media only screen and (min-width: 768px) {
+    .navbar__list {
+        max-height: 100%;
+    }
+    .navbar__menu label {
+        display: none;
+    }
+}
+
+
+/* @media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+} */

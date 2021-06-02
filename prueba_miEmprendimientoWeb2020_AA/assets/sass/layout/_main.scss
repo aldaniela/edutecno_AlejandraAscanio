@@ -10,12 +10,10 @@
     }
     &__resumen {
         border: 1px solid $charcoal;
-        padding: 50px;
-        width: 100%;
         img {
             border-radius: 50%;
             border-radius: 1px solid $black;
-            max-width: 150px;
+            max-width: 50px;
         }
         p,
         ul {
@@ -43,4 +41,8 @@
     i {
         padding: 0 5px;
     }
+}
+
+.main__animacion {
+    max-width: 50px;
 }

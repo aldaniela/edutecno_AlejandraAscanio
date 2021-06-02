@@ -1,27 +1,46 @@
 .footer {
+    padding: 10px 0;
     background-color: $black;
     color: $white;
-    &__copy {
-        text-align: left;
-        padding: 30px;
-        margin-left: 50px;
-    }
+    text-align: center;
     &__menu {
-        text-align: center;
-        padding: 20px;
+        margin: -20px 0;
         ul {
             list-style-type: none;
+            padding: 0;
             li {
-                display: inline;
                 a {
                     text-decoration: none;
-                    padding: 0 10px;
                     color: $orange;
+                    &:hover {
+                        color: hotpink;
+                    }
                 }
             }
         }
     }
     &__form {
-        padding: 30px 0;
+        padding: 0 3px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer {
+        text-align: left;
+        padding: 10px;
+        &__menu {
+            ul {
+                padding: 3px 0;
+                li {
+                    display: inline;
+                    a {
+                        padding: 0 3px;
+                    }
+                }
+            }
+        }
+        input[type="email" i] {
+            width: 100px;
+        }
     }
 }
