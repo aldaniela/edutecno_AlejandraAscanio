@@ -1,0 +1,38 @@
+@keyframes mover {
+    0% {
+        transform: translate(0px, 0px)
+    }
+    100% {
+        transform: translate(100px, 0px)
+    }
+}
+
+.animacion__mover {
+    animation: mover 3s ease-in-out infinite alternate;
+}
+
+@keyframes ckw {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#gear {
+    animation-name: ckw;
+    animation-duration: 15.5s;
+    /* Things added */
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    /* <--- */
+}
+
+.relleno,
+.ruedita {
+    animation: ckw 4s ease-in-out infinite alternate;
+    transform-origin: 50% 50%;
+    display: inline-block;
+}

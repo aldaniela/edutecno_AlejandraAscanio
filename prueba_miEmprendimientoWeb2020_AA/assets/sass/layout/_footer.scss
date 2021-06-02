@@ -27,17 +27,23 @@
 @media only screen and (min-width: 768px) {
     .footer {
         text-align: left;
-        padding: 10px;
+        &__copy {
+            padding: 20px 5px;
+        }
         &__menu {
+            margin: 0;
             ul {
-                padding: 3px 0;
+                padding: 5px 10px;
                 li {
                     display: inline;
                     a {
-                        padding: 0 3px;
+                        padding: 0 5px;
                     }
                 }
             }
+        }
+        &__form {
+            padding: 20px 0;
         }
         input[type="email" i] {
             width: 100px;

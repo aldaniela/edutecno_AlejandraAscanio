@@ -17,8 +17,10 @@
         justify-content: flex-end;
         ul {
             list-style-type: none;
+            margin-top: 30px;
+            text-align: left;
             li {
-                display: inline;
+                flex-direction: column;
                 a {
                     text-decoration: none;
                     padding: 0 10px;
@@ -50,7 +52,7 @@ input#menu {
 }
 
 
-/* Toggle Effect */
+/* Desplegar el menu cuando se activa el input */
 
 input:checked~.navbar__list {
     max-height: 100%;
@@ -63,26 +65,16 @@ input:checked~.navbar__list {
     .navbar__list {
         max-height: 100%;
     }
-    .navbar__menu label {
-        display: none;
+    .navbar__menu {
+        & ul {
+            padding: 10px;
+            margin: 0;
+            li {
+                display: inline;
+            }
+        }
+        & label {
+            display: none;
+        }
     }
 }
-
-
-/* @media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-} */

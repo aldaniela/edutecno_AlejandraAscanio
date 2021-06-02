@@ -15,6 +15,43 @@ img {
   max-width: 100%;
 }
 
+@keyframes mover {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(100px, 0px);
+  }
+}
+.animacion__mover {
+  animation: mover 3s ease-in-out infinite alternate;
+}
+
+@keyframes ckw {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#gear {
+  animation-name: ckw;
+  animation-duration: 15.5s;
+  /* Things added */
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  display: inline-block;
+  /* <--- */
+}
+
+.relleno,
+.ruedita {
+  animation: ckw 4s ease-in-out infinite alternate;
+  transform-origin: 50% 50%;
+  display: inline-block;
+}
+
 /* Container */
 /* Para moviles, por defecto*/
 .container {
@@ -265,9 +302,11 @@ img {
 }
 .navbar__menu ul {
   list-style-type: none;
+  margin-top: 30px;
+  text-align: left;
 }
 .navbar__menu ul li {
-  display: inline;
+  flex-direction: column;
 }
 .navbar__menu ul li a {
   text-decoration: none;
@@ -293,7 +332,7 @@ input#menu {
   overflow: hidden;
 }
 
-/* Toggle Effect */
+/* Desplegar el menu cuando se activa el input */
 input:checked ~ .navbar__list {
   max-height: 100%;
 }
@@ -304,36 +343,31 @@ input:checked ~ .navbar__list {
     max-height: 100%;
   }
 
+  .navbar__menu ul {
+    padding: 10px;
+    margin: 0;
+  }
+  .navbar__menu ul li {
+    display: inline;
+  }
   .navbar__menu label {
     display: none;
   }
 }
-/* @media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-} */
 .header {
   background: url("../img/desarrolloweb2021t.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 165px;
+  height: 250px;
   width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 300px;
+  }
+}
 .main {
   background-color: #FFFFFF;
   margin-top: 20px;
@@ -346,16 +380,21 @@ input:checked ~ .navbar__list {
   text-align: left;
 }
 .main__resumen {
+  padding: 10px;
   border: 1px solid #2E1503;
 }
 .main__resumen img {
   border-radius: 50%;
   border-radius: 1px solid #000000;
-  max-width: 50px;
+  max-width: 15%;
 }
 .main__resumen p,
 .main__resumen ul {
   text-align: left;
+}
+.main__resumen p li,
+.main__resumen ul li {
+  color: #FFA500;
 }
 .main__resumen-division {
   background-color: grey;
@@ -380,7 +419,12 @@ input:checked ~ .navbar__list {
 }
 
 .main__animacion {
-  max-width: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.main__animacion svg {
+  width: 50%;
 }
 
 .footer {
@@ -410,16 +454,24 @@ input:checked ~ .navbar__list {
 @media only screen and (min-width: 768px) {
   .footer {
     text-align: left;
-    padding: 10px;
+  }
+  .footer__copy {
+    padding: 20px 5px;
+  }
+  .footer__menu {
+    margin: 0;
   }
   .footer__menu ul {
-    padding: 3px 0;
+    padding: 5px 10px;
   }
   .footer__menu ul li {
     display: inline;
   }
   .footer__menu ul li a {
-    padding: 0 3px;
+    padding: 0 5px;
+  }
+  .footer__form {
+    padding: 20px 0;
   }
   .footer input[type=email i] {
     width: 100px;

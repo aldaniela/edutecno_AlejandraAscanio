@@ -9,15 +9,19 @@
         text-align: left;
     }
     &__resumen {
+        padding: 10px;
         border: 1px solid $charcoal;
         img {
             border-radius: 50%;
             border-radius: 1px solid $black;
-            max-width: 50px;
+            max-width: 15%;
         }
         p,
         ul {
             text-align: left;
+            li {
+                color: $orange;
+            }
         }
         &-division {
             background-color: grey;
@@ -44,5 +48,10 @@
 }
 
 .main__animacion {
-    max-width: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    svg {
+        width: 50%;
+    }
 }
