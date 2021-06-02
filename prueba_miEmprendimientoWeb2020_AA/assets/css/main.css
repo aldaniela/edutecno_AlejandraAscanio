@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Color agregado por mi, no está en los estilos */
 /* Base Styles */
 body {
   height: 100vh;
@@ -15,6 +17,15 @@ img {
   max-width: 100%;
 }
 
+/* Animación para desplazar hacia la derecha */
+@-webkit-keyframes mover {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(100px, 0px);
+  }
+}
 @keyframes mover {
   0% {
     transform: translate(0px, 0px);
@@ -23,11 +34,13 @@ img {
     transform: translate(100px, 0px);
   }
 }
-.animacion__mover {
+.animacion--mover {
+  -webkit-animation: mover 3s ease-in-out infinite alternate;
   animation: mover 3s ease-in-out infinite alternate;
 }
 
-@keyframes ckw {
+/* Animacion para girar la rueda... NO FUNCIONA COMO QUIERO */
+@-webkit-keyframes giro {
   0% {
     transform: rotate(0deg);
   }
@@ -35,25 +48,95 @@ img {
     transform: rotate(360deg);
   }
 }
-#gear {
-  animation-name: ckw;
-  animation-duration: 15.5s;
-  /* Things added */
-  animation-iteration-count: infinite;
+@keyframes giro {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animacion--girar {
   transform-origin: 50% 50%;
-  display: inline-block;
-  /* <--- */
+  -webkit-animation: giro 4s ease-in-out infinite alternate;
+  animation: giro 4s ease-in-out infinite alternate;
 }
 
-.relleno,
-.ruedita {
-  animation: ckw 4s ease-in-out infinite alternate;
-  transform-origin: 50% 50%;
-  display: inline-block;
+.navbar {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+}
+.navbar__menu ul li a {
+  color: #FFFFFF;
+}
+.navbar__menu ul li a:hover {
+  color: #FFA500;
+}
+.navbar__menu label:hover {
+  color: #FFA500;
 }
 
+/* Para la seccion Main */
+.main {
+  color: #000000;
+  font-family: "Ubuntu", sans-serif;
+}
+.main__cursos h3 {
+  font-size: 30px;
+  color: green;
+  font-weight: 700;
+}
+.main__cursos h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.main__resumen h3 {
+  text-transform: uppercase;
+}
+.main__resumen ul li {
+  color: #c72bc7;
+  font-weight: 700;
+}
+.main__resumen-division {
+  color: #FFFFFF;
+}
+
+/* Para el footer */
+.footer {
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+}
+.footer__menu ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.footer__menu ul li a:hover {
+  color: #FFA500;
+}
+.footer__form {
+  padding: 0 3px;
+}
+.footer input[type=email i] {
+  color: #2E1503;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+  .footer__menu ul li a {
+    font-size: 12px;
+  }
+}
 /* Container */
-/* Para moviles, por defecto*/
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -74,6 +157,11 @@ img {
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    width: 95%;
   }
 }
 /*======================================================================
@@ -285,7 +373,6 @@ img {
   display: flex;
   background-color: #000000;
   box-sizing: border-box;
-  color: #FFA500;
   width: 100%;
   margin-bottom: 15px;
   padding: 20px;
@@ -311,10 +398,6 @@ img {
 .navbar__menu ul li a {
   text-decoration: none;
   padding: 0 10px;
-  color: #FFA500;
-}
-.navbar__menu ul li a:hover {
-  color: hotpink;
 }
 
 /* Control del boton de hamburguesa del menu */
@@ -323,6 +406,7 @@ img {
   cursor: pointer;
 }
 
+/* Esto oculta el checkbox del input */
 input#menu {
   display: none;
 }
@@ -381,7 +465,7 @@ input:checked ~ .navbar__list {
 }
 .main__resumen {
   padding: 10px;
-  border: 1px solid #2E1503;
+  border: 1px solid #000000;
 }
 .main__resumen img {
   border-radius: 50%;
@@ -392,13 +476,8 @@ input:checked ~ .navbar__list {
 .main__resumen ul {
   text-align: left;
 }
-.main__resumen p li,
-.main__resumen ul li {
-  color: #FFA500;
-}
 .main__resumen-division {
   background-color: grey;
-  color: #FFFFFF;
   width: 100%;
   line-height: 30px;
 }
@@ -411,7 +490,6 @@ input:checked ~ .navbar__list {
 }
 
 .main__cursos-logos {
-  color: #FFA500;
   display: inline;
 }
 .main__cursos-logos i {
@@ -424,13 +502,30 @@ input:checked ~ .navbar__list {
   margin-top: 40px;
 }
 .main__animacion svg {
-  width: 50%;
+  width: 80%;
 }
 
+@media only screen and (min-width: 768px) {
+  .main__animacion {
+    margin-top: 100px;
+  }
+  .main__animacion svg {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main__animacion svg {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main__animacion svg {
+    width: 40%;
+  }
+}
 .footer {
   padding: 10px 0;
   background-color: #000000;
-  color: #FFFFFF;
   text-align: center;
 }
 .footer__menu {
@@ -442,10 +537,6 @@ input:checked ~ .navbar__list {
 }
 .footer__menu ul li a {
   text-decoration: none;
-  color: #FFA500;
-}
-.footer__menu ul li a:hover {
-  color: hotpink;
 }
 .footer__form {
   padding: 0 3px;
@@ -456,19 +547,19 @@ input:checked ~ .navbar__list {
     text-align: left;
   }
   .footer__copy {
-    padding: 20px 5px;
+    padding: 20px 10px;
   }
   .footer__menu {
     margin: 0;
   }
   .footer__menu ul {
-    padding: 5px 10px;
+    padding: 8px 2px;
   }
   .footer__menu ul li {
     display: inline;
   }
   .footer__menu ul li a {
-    padding: 0 5px;
+    padding: 0 7px;
   }
   .footer__form {
     padding: 20px 0;
@@ -478,10 +569,17 @@ input:checked ~ .navbar__list {
   }
 }
 .footer__enviar {
-  background-color: hotpink;
+  background-color: #FFA500;
 }
 .footer__enviar:hover {
-  background-color: indigo;
+  background-color: #FFFFFF;
+}
+
+.footer__input-mail {
+  background-color: #FFFFFF;
+}
+.footer__input-mail:hover {
+  background-color: #FFA500;
 }
 
 /*# sourceMappingURL=main.css.map */

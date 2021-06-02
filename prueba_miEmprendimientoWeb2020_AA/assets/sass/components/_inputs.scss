@@ -1,6 +1,13 @@
 .footer__enviar {
-    background-color: hotpink;
+    background-color: $orange;
     &:hover {
-        background-color: indigo;
+        background-color: $white;
+    }
+}
+
+.footer__input-mail {
+    background-color: $white;
+    &:hover {
+        background-color: $orange;
     }
 }

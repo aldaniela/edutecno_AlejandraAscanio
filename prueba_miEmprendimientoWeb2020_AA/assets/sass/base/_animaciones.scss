@@ -1,3 +1,14 @@
+/* Animación para desplazar hacia la derecha */
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translate(0px, 0px)
+    }
+    100% {
+        transform: translate(100px, 0px)
+    }
+}
+
 @keyframes mover {
     0% {
         transform: translate(0px, 0px)
@@ -7,11 +18,15 @@
     }
 }
 
-.animacion__mover {
+.animacion--mover {
+    -webkit-animation: mover 3s ease-in-out infinite alternate;
     animation: mover 3s ease-in-out infinite alternate;
 }
 
-@keyframes ckw {
+
+/* Animacion para girar la rueda... NO FUNCIONA COMO QUIERO */
+
+@-webkit-keyframes giro {
     0% {
         transform: rotate(0deg);
     }
@@ -20,19 +35,17 @@
     }
 }
 
-#gear {
-    animation-name: ckw;
-    animation-duration: 15.5s;
-    /* Things added */
-    animation-iteration-count: infinite;
-    transform-origin: 50% 50%;
-    display: inline-block;
-    /* <--- */
+@keyframes giro {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.relleno,
-.ruedita {
-    animation: ckw 4s ease-in-out infinite alternate;
+.animacion--girar {
     transform-origin: 50% 50%;
-    display: inline-block;
+    -webkit-animation: giro 4s ease-in-out infinite alternate;
+    animation: giro 4s ease-in-out infinite alternate;
 }

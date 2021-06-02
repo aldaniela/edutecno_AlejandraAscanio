@@ -10,7 +10,7 @@
     }
     &__resumen {
         padding: 10px;
-        border: 1px solid $charcoal;
+        border: 1px solid $black;
         img {
             border-radius: 50%;
             border-radius: 1px solid $black;
@@ -19,13 +19,9 @@
         p,
         ul {
             text-align: left;
-            li {
-                color: $orange;
-            }
         }
         &-division {
             background-color: grey;
-            color: $white;
             width: 100%;
             line-height: 30px;
         }
@@ -40,7 +36,6 @@
 }
 
 .main__cursos-logos {
-    color: $orange;
     display: inline;
     i {
         padding: 0 5px;
@@ -52,6 +47,27 @@
     justify-content: center;
     margin-top: 40px;
     svg {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .main__animacion {
+        margin-top: 100px;
+        svg {
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .main__animacion svg {
         width: 50%;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .main__animacion svg {
+        width: 40%;
     }
 }

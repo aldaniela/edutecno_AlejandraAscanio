@@ -1,0 +1,88 @@
+.navbar {
+    color: $white;
+    font-family: $poppins;
+    font-weight: $bold;
+    font-size: $x-small;
+    &__menu {
+        ul li a {
+            color: $white;
+            &:hover {
+                color: $orange;
+            }
+        }
+        & label:hover {
+            color: $orange;
+        }
+    }
+}
+
+
+/* Para la seccion Main */
+
+.main {
+    color: $black;
+    font-family: $ubuntu;
+    &__cursos h3 {
+        font-size: $x-large;
+        color: green;
+        font-weight: $bold;
+    }
+    &__cursos h4 {
+        font-weight: $bold;
+        font-size: $large;
+    }
+    &__resumen {
+        h3 {
+            text-transform: uppercase;
+        }
+        ul {
+            li {
+                color: $purple;
+                font-weight: $bold;
+            }
+        }
+        &-division {
+            color: $white;
+        }
+    }
+}
+
+
+/* Para el footer */
+
+.footer {
+    font-family: $poppins;
+    color: $white;
+    &__menu {
+        ul li a {
+            text-decoration: none;
+            color: $white;
+            font-size: $small;
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+    &__form {
+        padding: 0 3px;
+    }
+    input[type="email" i] {
+        color: $charcoal;
+        font-weight: $bold;
+    }
+}
+
+//////////////////////////////////////////////////////////
+@media only screen and (min-width:768px) {
+    .navbar {
+        font-size: $small;
+    }
+    .footer {
+        font-size: $x-small;
+        &__menu {
+            ul li a {
+                font-size: $x-small;
+            }
+        }
+    }
+}
