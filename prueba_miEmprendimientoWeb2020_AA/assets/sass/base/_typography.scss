@@ -7,11 +7,11 @@
         ul li a {
             color: $white;
             &:hover {
-                color: $orange;
+                @include color-naranja;
             }
         }
         & label:hover {
-            color: $orange;
+            @include color-naranja;
         }
     }
 }
@@ -24,7 +24,6 @@
     font-family: $ubuntu;
     &__cursos h3 {
         font-size: $x-large;
-        color: green;
         font-weight: $bold;
     }
     &__cursos h4 {
@@ -59,7 +58,7 @@
             color: $white;
             font-size: $small;
             &:hover {
-                color: $orange;
+                @include color-naranja;
             }
         }
     }
