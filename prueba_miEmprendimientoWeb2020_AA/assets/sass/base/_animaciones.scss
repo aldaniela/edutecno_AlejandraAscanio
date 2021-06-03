@@ -24,7 +24,7 @@
 }
 
 
-/* Animacion para girar la rueda... NO FUNCIONA COMO QUIERO */
+/* Animacion para girar la rueda... Funciona =) */
 
 @-webkit-keyframes giro {
     0% {
@@ -45,7 +45,7 @@
 }
 
 .animacion--girar {
-    transform-origin: 50% 50%;
+    transform-origin: 79% 410px;
     -webkit-animation: giro 4s ease-in-out infinite alternate;
     animation: giro 4s ease-in-out infinite alternate;
 }
