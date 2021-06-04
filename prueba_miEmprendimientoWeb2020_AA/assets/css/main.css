@@ -39,7 +39,7 @@ img {
   animation: mover 3s ease-in-out infinite alternate;
 }
 
-/* Animacion para girar la rueda... Funciona =) */
+/* Animacion para girar la tuerca... Funciona =) */
 @-webkit-keyframes giro {
   0% {
     transform: rotate(0deg);
@@ -58,8 +58,8 @@ img {
 }
 .animacion--girar {
   transform-origin: 79% 410px;
-  -webkit-animation: giro 4s ease-in-out infinite alternate;
-  animation: giro 4s ease-in-out infinite alternate;
+  -webkit-animation: giro 2s ease-in-out infinite normal;
+  animation: giro 2s ease-in-out infinite normal;
 }
 
 .navbar {
