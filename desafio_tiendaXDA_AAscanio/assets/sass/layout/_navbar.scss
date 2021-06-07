@@ -1,42 +1,48 @@
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
     color: $white;
     background-color: $white;
 }
-.navbar__menu{
-    ul{
-        list-style-type:none;
+
+.navbar__menu {
+    ul {
+        list-style-type: none;
         overflow: hidden;
-        li{
+        li {
             float: right;
-            a{
+            a {
                 display: block;
                 padding: 8px;
             }
         }
     }
 }
-.navbar__logo{
+
+.navbar__logo {
     background-color: $smoky-black;
     float: left!important;
     padding: 1%;
 }
+
 section::after {
     content: "";
     display: table;
     clear: both;
 }
+
+
 /* Extra small devices (phones, 768px and down) */
+
 @media only screen and (max-width: 768px) {
-    .navbar{
-       i{
+    .navbar {
+        i {
             float: right;
             padding: 8px;
         }
     }
-    .navbar__menu{
+    .navbar__menu {
         display: none;
     }
     section::after {
@@ -45,9 +51,12 @@ section::after {
         clear: both;
     }
 }
+
+
 /* Para tablets y tamaños superiores */
-@media only screen and (min-width: 768px){
-    .navbar__mobile-menu{
+
+@media only screen and (min-width: 768px) {
+    .navbar__mobile-menu {
         display: none;
     }
 }
