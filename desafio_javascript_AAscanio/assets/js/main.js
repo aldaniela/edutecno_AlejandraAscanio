@@ -1,7 +1,4 @@
-var enviar = document.getElementById("formulario");
-enviar.addEventListener('submit', validar);
-
-function validar(event) { //Esto valida si todo el formulario esta bien
+let validar = (event) => { //Esto valida si todo el formulario esta bien
     event.preventDefault(); //para que no borre el formulario como lo hace por defecto
     var f_nombre = document.getElementById("nombre").value;
     console.log(f_nombre);
@@ -20,7 +17,7 @@ function validar(event) { //Esto valida si todo el formulario esta bien
     }
 }
 
-function validar2(name, subject, message) { //Esto valida cada campo del formulario. Si retorno=TRUE es porque todos estan bien
+let validar2 = (name, subject, message) => { //Esto valida cada campo del formulario. Si retorno=TRUE es porque todos estan bien
     const permitido = /^[a-zA-Z ]+$/gim;
     const permitido2 = /^[a-zA-Z ]+$/gim;
     const permitido3 = /^[a-zA-Z ]+$/gim;
@@ -56,3 +53,6 @@ function validar2(name, subject, message) { //Esto valida cada campo del formula
     }
     return retorno;
 }
+
+var enviar = document.getElementById("formulario");
+enviar.addEventListener('submit', validar);
