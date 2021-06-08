@@ -3,19 +3,19 @@ var cambiar_color = color => document.getElementById("caja").style.backgroundCol
 
 var boton1 = document.getElementById("btn-1");
 var color1 = document.getElementById("btn-1").style.backgroundColor;
-boton1.addEventListener('click', function() { cambiar_color(color1) });
+boton1.addEventListener('click', () => cambiar_color(color1));
 
 var boton2 = document.getElementById("btn-2");
 var color2 = document.getElementById("btn-2").style.backgroundColor;
-boton2.addEventListener('click', function() { cambiar_color(color2) });
+boton2.addEventListener('click', () => cambiar_color(color2));
 
 var boton3 = document.getElementById("btn-3");
 var color3 = document.getElementById("btn-3").style.backgroundColor;
-boton3.addEventListener('click', function() { cambiar_color(color3) });
+boton3.addEventListener('click', () => cambiar_color(color3));
 
 var boton4 = document.getElementById("btn-4");
 var color4 = document.getElementById("btn-4").style.backgroundColor;
-boton4.addEventListener('click', function() { cambiar_color(color4) });
+boton4.addEventListener('click', () => cambiar_color(color4));
 
 var boton5 = document.getElementById("btn-5");
 var color5 = document.getElementById("btn-5").style.backgroundColor;
