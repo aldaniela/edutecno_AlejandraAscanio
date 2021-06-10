@@ -126,7 +126,8 @@
 
     //Agregar código para el desafio 2 aquí
 
-    //Hago una copia de traumatologia y a esa le hago el push con los nuevos valores
+    document.write(`<br><br>`);
+    //Punto 1.Hago una copia de traumatologia y a esa le hago el push con los nuevos valores
     var traumatologia2 = traumatologia
     traumatologia2.push({
         hora: '09:00',
@@ -160,23 +161,46 @@
         prevision: 'FONASA'
     });
     console.log(traumatologia2);
-    //Hago una copia de radiologia y a esa le quito el primer y ultimo elemento
+    //Punto 2. Hago una copia de radiologia y a esa le quito el primer y ultimo elemento
     var radiologia2 = radiologia;
     radiologia2.pop();
     radiologia2.shift();
     console.log(radiologia2)
 
-    //Punto 3
+    //Punto 3. Mostrar el contenido de atención dental, 1 registro por línea
     document.write(`<h3>Resumen atención Dental</h3>`)
     dental.forEach(linea => {
         document.write(`<p>${linea.hora} - ${linea.especialista} - ${linea.paciente} - ${linea.rut} - ${linea.prevision}</p>`)
 
     });
 
+    //Punto 4. Imprimir el listado de todos los pacientes
+    var todos = radiologia.concat(traumatologia2.concat(dental))
+    console.log(todos)
+    document.write(`<h3>Listado general de pacientes atendidos</h3>`)
+    todos.forEach(linea => {
+        document.write(`<p>${linea.paciente}</p>`);
+    });
 
+    //Punto 5. Filtras los pacientes que indican ser de ISAPRE en atención dental
+    var isapre_dental = dental.filter(function(paciente) {
+        return paciente.prevision === "ISAPRE";
+    });
+    document.write(`<h3>Pacientes atención Dental con Previsión ISAPRE</h3>`)
+    isapre_dental.forEach(linea => {
+        document.write(`<p>${linea.paciente} - ${linea.prevision}</p>`);
+    });
 
+    //Punto 6. Filtras los pacientes que indican ser de FONASA en atención traumatologia
+    var fonasa_trauma = traumatologia.filter(function(paciente) {
+        return paciente.prevision === "FONASA";
+    });
+    document.write(`<h3>Pacientes atención Traumatología con Previsión FONASA</h3>`)
+    fonasa_trauma.forEach(linea => {
+        document.write(`<p>${linea.paciente} - ${linea.prevision}</p>`);
+    });
 
-
+    document.write(`<br><br>`);
     //Agregar código para el desafio 2 aquí
 
     document.write(`<p>Cantidad de atenciones para Radiología: ${radiologia.length}</p>`);
@@ -188,7 +212,6 @@
     document.write(`<p>Primera atencion Traumatologia: ${traumatologia[0].paciente} - ${traumatologia[0].prevision} | Última atención: ${traumatologia[traumatologia.length -1].paciente} - ${traumatologia[traumatologia.length -1].prevision}.</p>`);
     document.write(`<p>Primera atencion Dental: ${dental[0].paciente} - ${dental[0].prevision} | Última atención: ${dental[dental.length -1].paciente} - ${dental[dental.length -1].prevision}.</p>`);
 </script>
-<script src="./assets/js/main.js"></script>
 
 <body>
 
