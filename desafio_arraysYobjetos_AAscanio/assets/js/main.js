@@ -117,9 +117,9 @@ document.write("<div class='container'>");
 document.write("<h2>Atención radiología</h2>");
 document.write(`<p>Primera atención: ${radiologia[0].paciente}-${radiologia[0].prevision}|Última atención: ${radiologia[radiologia.length-1].paciente} | ${radiologia[radiologia.length - 1].prevision}</p>`);
 //Aquí creamos nuestra tabla con bootstrap para Radiología
-document.write("<table class='table'>");
+document.write("<table class='table table-bordered'>");
 //Aquí indicamos que nuestra tabla tendrá encabezado
-document.write("<thead class='bg-dark text-white'>");
+document.write("<thead class='bg-info text-white'>");
 document.write("<tr>");
 //Aquí definimos el tipo de dato que tendrá cada columna y su encabezado
 document.write("<th scope='col'>Hora</th>");
@@ -150,9 +150,9 @@ document.write(`</table>`)
 document.write("<h2>Atención Traumatologia</h2>");
 document.write(`<p>Primera atención: ${traumatologia[0].paciente}-${traumatologia[0].prevision}|Última atención: ${traumatologia[traumatologia.length-1].paciente} | ${traumatologia[traumatologia.length - 1].prevision}</p>`);
 //Aquí creamos nuestra tabla con bootstrap para Radiología
-document.write("<table class='table'>");
+document.write("<table class='table table-bordered'>");
 //Aquí indicamos que nuestra tabla tendrá encabezado
-document.write("<thead class='bg-dark text-white'>");
+document.write("<thead class='bg-info text-white'>");
 document.write("<tr>");
 //Aquí definimos el tipo de dato que tendrá cada columna y su encabezado
 document.write("<th scope='col'>Hora</th>");
@@ -184,9 +184,9 @@ document.write(`</table>`)
 document.write("<h2>Atención Dental</h2>");
 document.write(`<p>Primera atención: ${dental[0].paciente}-${dental[0].prevision}|Última atención: ${dental[dental.length-1].paciente} | ${dental[dental.length - 1].prevision}</p>`);
 //Aquí creamos nuestra tabla con bootstrap para Radiología
-document.write("<table class='table'>");
+document.write("<table class='table table-bordered'>");
 //Aquí indicamos que nuestra tabla tendrá encabezado
-document.write("<thead class='bg-dark text-white'>");
+document.write("<thead class='bg-info text-white'>");
 document.write("<tr>");
 //Aquí definimos el tipo de dato que tendrá cada columna y su encabezado
 document.write("<th scope='col'>Hora</th>");
