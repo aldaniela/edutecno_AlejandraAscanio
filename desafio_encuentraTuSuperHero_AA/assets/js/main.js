@@ -9,7 +9,7 @@ var allowed_search = (data) => {
     }
 }
 
-var invoke_api = (searchID) => {
+/* var invoke_api2 = (searchID) => {
     console.log("Entre en mi funcion invoke")
     $.ajax({
         type: "GET",
@@ -27,7 +27,7 @@ var invoke_api = (searchID) => {
         },
     });
     $("#content").show();
-}
+} */
 
 $(document).ready(function() {
     $('#button').click(function(e) {
@@ -37,7 +37,7 @@ $(document).ready(function() {
         if (allowed_search(user_search)) {
             console.log("son números y puedo buscar");
             $("#search_help").hide();
-            invoke_api(user_search);
+            $("#content").invoke_api(user_search);
         } else {
             console.log("debes ingresar solo numeros");
             $("#search_help").show();
