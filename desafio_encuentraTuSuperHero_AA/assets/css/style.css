@@ -17,7 +17,7 @@ body {
 
 li {
     font-weight: 700;
-    color: red;
+    color: royalblue;
 }
 
 p {
@@ -30,4 +30,10 @@ p {
     font-size: xx-large;
     color: grey;
     font-weight: 700;
+}
+
+main h2 {
+    font-weight: 700;
+    color: rgb(15, 9, 66);
+    font-size: 40px;
 }
