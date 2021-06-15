@@ -9,19 +9,24 @@ var allowed_search = (data) => {
     }
 }
 
-var invoke_api = () => {
+var invoke_api = (searchID) => {
     console.log("Entre en mi funcion invoke")
     $.ajax({
         type: "GET",
-        url: "https://superheroapi.com/api/10161418912123747/1",
+        url: "https://superheroapi.com/api.php/10161418912123747/" + searchID,
         dataType: "json",
         success: function(datosApi) {
-            console.log(datosApi.data);
+            console.log(datosApi.name);
+            console.log(datosApi.image["url"])
+            search_image = datosApi.image["url"];
+            $("#hero_image").attr("src", search_image);
+            $("#hero_name").text(datosApi.name);
         },
         error: function(error) {
             //si algo sale mal, se agrega la funcionalidad aquí.
         },
     });
+    $("#content").show();
 }
 
 $(document).ready(function() {
@@ -32,7 +37,7 @@ $(document).ready(function() {
         if (allowed_search(user_search)) {
             console.log("son números y puedo buscar");
             $("#search_help").hide();
-            invoke_api();
+            invoke_api(user_search);
         } else {
             console.log("debes ingresar solo numeros");
             $("#search_help").show();
