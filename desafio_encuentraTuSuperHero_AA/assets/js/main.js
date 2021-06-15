@@ -9,35 +9,75 @@ var allowed_search = (data) => {
     }
 }
 
-/* var invoke_api2 = (searchID) => {
-    console.log("Entre en mi funcion invoke")
-    $.ajax({
-        type: "GET",
-        url: "https://superheroapi.com/api.php/10161418912123747/" + searchID,
-        dataType: "json",
-        success: function(datosApi) {
-            console.log(datosApi.name);
-            console.log(datosApi.image["url"])
-            search_image = datosApi.image["url"];
-            $("#hero_image").attr("src", search_image);
-            $("#hero_name").text(datosApi.name);
-        },
-        error: function(error) {
-            //si algo sale mal, se agrega la funcionalidad aquí.
-        },
-    });
-    $("#content").show();
-} */
+
 
 $(document).ready(function() {
     $('#button').click(function(e) {
         e.preventDefault();
-        let user_search = $("#searchID").val();
+        var user_search = $("#searchID").val();
         console.log(user_search)
         if (allowed_search(user_search)) {
             console.log("son números y puedo buscar");
             $("#search_help").hide();
-            $("#content").invoke_api(user_search);
+            $.ajax({
+                type: "GET",
+                url: "https://superheroapi.com/api.php/10161418912123747/" + user_search,
+                dataType: "json",
+                success: function(datosApi) {
+                    console.log(datosApi.name);
+                    search_image = datosApi.image["url"];
+                    $("#hero_image").attr("src", search_image);
+                    $("#hero_name").text(datosApi.name);
+                    $("#hero_fullName").text(datosApi.biography['full-name']);
+                    $("#hero_alias").text(datosApi.biography.aliases);
+                    $("#hero_job").text(datosApi.work.occupation);
+                    $("#hero_race").text(datosApi.appearance.race);
+                    $("#hero_conections").text(datosApi.connections['group-affiliation']);
+                    var hero_powers = [];
+                    $.each(datosApi.powerstats, (index, value) => {
+                        console.log(`poderes ${index} - ${value}`)
+                        hero_powers.push({
+                            y: value,
+                            label: index
+                        })
+                        console.log(hero_powers)
+                    })
+                    var chart = new CanvasJS.Chart("chartContainer", {
+                        exportEnabled: true,
+                        animationEnabled: true,
+                        title: {
+                            text: "Estadísticas de poder para " + datosApi.name
+                        },
+                        legend: {
+                            cursor: "pointer",
+                            itemclick: explodePie
+                        },
+                        data: [{
+                            type: "pie",
+                            showInLegend: true,
+                            startAngle: 240,
+                            toolTipContent: "{label}: <strong>{y}</strong>",
+                            indexLabel: "{label} ({y})",
+                            dataPoints: hero_powers
+                        }]
+                    });
+                    chart.render();
+
+                    function explodePie(e) {
+                        if (typeof(e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+                            e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+                        } else {
+                            e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+                        }
+                        e.chart.render();
+
+                    }
+                },
+                error: function(error) {
+                    console.log("salio mal la llamada al API")
+                },
+            });
+            $("#content").show();
         } else {
             console.log("debes ingresar solo numeros");
             $("#search_help").show();

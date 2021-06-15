@@ -1,3 +1,11 @@
+body {
+    font-family: 'Poppins';
+}
+
+#search {
+    margin-top: 70px;
+}
+
 #search_help {
     display: none;
     color: red;
@@ -5,4 +13,21 @@
 
 #content {
     display: none;
+}
+
+li {
+    font-weight: 700;
+    color: red;
+}
+
+p {
+    font-family: 'Ubuntu';
+    color: green;
+    font-weight: 400;
+}
+
+#hero_name {
+    font-size: xx-large;
+    color: grey;
+    font-weight: 700;
 }

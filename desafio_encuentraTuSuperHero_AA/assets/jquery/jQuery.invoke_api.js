@@ -9,12 +9,12 @@ jQuery.fn.invoke_api = (searchID) => {
             search_image = datosApi.image["url"];
             $("#hero_image").attr("src", search_image);
             $("#hero_name").text(datosApi.name);
-            $("#hero_fullName").text(datosApi.biography.full - name);
+            $("#hero_fullName").text(datosApi.biography['full-name']);
             $("#hero_alias").text(datosApi.biography.aliases);
             $("#hero_job").text(datosApi.work.occupation);
         },
         error: function(error) {
-            //si algo sale mal, se agrega la funcionalidad aquí.
+            console.log("salio mal la llamada al API")
         },
     });
     $("#content").show();
