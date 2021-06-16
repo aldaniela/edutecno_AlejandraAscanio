@@ -39,7 +39,7 @@ $(document).ready(function() {
                             console.log(`poderes ${index} - ${value}`)
                             hero_powers.push({
                                 y: value,
-                                label: index
+                                name: index
                             })
                             console.log(hero_powers)
                         })
@@ -57,8 +57,8 @@ $(document).ready(function() {
                                 type: "pie",
                                 showInLegend: true,
                                 startAngle: 240,
-                                toolTipContent: "{label}: <strong>{y}</strong>",
-                                indexLabel: "{label} ({y})",
+                                toolTipContent: "{name}: <strong>{y}</strong>",
+                                indexLabel: "{name} ({y})",
                                 dataPoints: hero_powers
                             }]
                         });
@@ -80,7 +80,7 @@ $(document).ready(function() {
                 });
                 $("#content").show();
             } else {
-                alert("Héro no existe en la lista. El número debe ser menor o igual a " + total_hero)
+                alert("Héroe no existe en la lista. El número debe ser menor o igual a " + total_hero)
             }
         } else {
             console.log("debes ingresar solo numeros");
