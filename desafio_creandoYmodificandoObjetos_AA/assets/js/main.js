@@ -1,11 +1,11 @@
 //funcion constructora para Consultorio
 function Consultorio(nombre, paciente) {
     this.nombre = nombre;
-    this.paciente = paciente || [];
+    this.pacientes = paciente || [];
 };
 //Para mostrar la informacion de todos los pacientes del consutorio
 Consultorio.prototype.getPacientes = function() {
-    return this.paciente;
+    return this.pacientes;
 };
 //Para obtener cada dato del paciente por separado
 Consultorio.prototype.getNombreCons = function(i) {
@@ -13,20 +13,20 @@ Consultorio.prototype.getNombreCons = function(i) {
 };
 //Para obtener cada dato del paciente por separado
 Consultorio.prototype.getNombre = function(i) {
-    return this.paciente[i].nombre;
+    return this.pacientes[i].nombre;
 };
 Consultorio.prototype.getEdad = function(i) {
-    return this.paciente[i].edad;
+    return this.pacientes[i].edad;
 };
 Consultorio.prototype.getRut = function(i) {
-    return this.paciente[i].rut;
+    return this.pacientes[i].rut;
 };
 Consultorio.prototype.getDiagnostico = function(i) {
-    return this.paciente[i].diagnostico;
+    return this.pacientes[i].diagnostico;
 };
 //para agregar pacientes al consultorio
 Consultorio.prototype.setPacientes = function(paciente) {
-    this.paciente.push(paciente);
+    this.pacientes.push(paciente);
 };
 //funcion constructora para Paciente
 function Paciente(nombre, edad, rut, diagnostico) {
@@ -54,6 +54,7 @@ var pac1 = new Paciente("Daniela", 37, "26155264-7", "tos");
 var pac2 = new Paciente("Maria", 70, "27119327-0", "asma");
 var pac3 = new Paciente("Pedro", 35, "45879632-8", "gripe");
 var consu1 = new Consultorio("Odontologia", [pac1, pac2]);
+//Pruebas de los get y set
 console.log(consu1.getPacientes());
 consu1.setPacientes(pac3);
 console.log(consu1.getPacientes());
@@ -61,7 +62,7 @@ pac1.setNombre("Alejandra");
 pac2.setEdad(73);
 pac3.setRUT("75321548-7");
 pac1.setDiagnostico("catarro");
-consu1.paciente[1].setNombre("Nuevo Nombre")
+consu1.pacientes[1].setNombre("Nuevo Nombre")
 console.log(consu1.getNombre(1))
 consu1.nombre = "Cardiologia";
 console.log(`Nombre del consultorio es: ${consu1.nombre}`)
@@ -104,11 +105,11 @@ $(document).ready(function() {
             e.preventDefault();
             let nombre_buscar = $("#nombre_buscar").val();
             console.log("El nombre a buscar " + nombre_buscar)
-            for (i = 0; i < consu1.paciente.length; i++) {
+            for (i = 0; i < consu1.pacientes.length; i++) {
                 if (nombre_buscar == consu1.getNombre(i)) {
                     $('#t2_fila1').html(`<td>${consu1.getNombre(i)}</td><td>${consu1.getEdad(i)}</td><td>${consu1.getRut(i)}</td><td>${consu1.getDiagnostico(i)}</td>`);
                     $("#resultado").text("");
-                    i = consu1.paciente.length; //Para poder salir del for
+                    i = consu1.pacientes.length; //Para poder salir del for
                 } else {
                     $('#t2_fila1').html(`<td></td><td></td><td></td><td></td>`);
                     $("#resultado").text("Paciente no encontrado");
@@ -119,7 +120,8 @@ $(document).ready(function() {
     $('#listar').click(function(e) {
         e.preventDefault();
         var j = 1;
-        for (i = 0; i < consu1.paciente.length; i++) {
+        //cambiar por un for each
+        for (i = 0; i < consu1.pacientes.length; i++) {
             $('#fila' + j).html(`<td>${consu1.getNombre(i)}</td><td>${consu1.getEdad(i)}</td><td>${consu1.getRut(i)}</td><td>${consu1.getDiagnostico(i)}</td>`);
             $('#body_tabla').append('<tr id="fila' + (j + 1) + '"></tr>');
             j++;
@@ -128,7 +130,7 @@ $(document).ready(function() {
     $('#editar').click(function(e) {
         e.preventDefault();
         let nombre_editar = $("#nombre_editar").val();
-        for (i = 0; i < consu1.paciente.length; i++) {
+        for (i = 0; i < consu1.pacientes.length; i++) {
             if (nombre_editar == consu1.getNombre(i)) {
                 $("#nombre_a_editar").text(`A continuación los datos del paciente: ${nombre_editar}`);
                 $("#form_a_editar").show();
@@ -136,7 +138,7 @@ $(document).ready(function() {
                 $("#rut_editar").val(consu1.getRut(i));
                 $("#diagnostico_editar").val(consu1.getDiagnostico(i));
                 indice_a_editar = i;
-                i = consu1.paciente.length; //Para poder salir del for
+                i = consu1.pacientes.length; //Para poder salir del for
             } else {
                 $("#nombre_a_editar").text("Paciente no encontrado");
             }
@@ -149,15 +151,16 @@ $(document).ready(function() {
         let rut = $("#rut_editar").val();
         let diagnostico = $("#diagnostico_editar").val();
         if (validar_form(nombre, edad, rut, diagnostico)) {
-            consu1.paciente[indice_a_editar].setEdad(edad);
-            consu1.paciente[indice_a_editar].setRUT(rut);
-            consu1.paciente[indice_a_editar].setDiagnostico(diagnostico);
+            consu1.pacientes[indice_a_editar].setEdad(edad);
+            consu1.pacientes[indice_a_editar].setRUT(rut);
+            consu1.pacientes[indice_a_editar].setDiagnostico(diagnostico);
             alert("Datos modificados con éxito");
             $("#nombre_editar").val("");
             $("#edad_editar").val("");
             $("#rut_editar").val("");
             $("#diagnostico_editar").val("");
             $("#form_a_editar").hide();
+            $("#nombre_a_editar").text("");
         } else {
             alert("El formulario debe estar completo.")
         }
