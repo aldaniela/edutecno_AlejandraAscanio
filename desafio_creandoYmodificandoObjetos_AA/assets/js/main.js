@@ -66,9 +66,7 @@ var pac2 = new Paciente("Maria", 70, "27119327-0", "asma");
 var pac3 = new Paciente("Pedro", 35, "45879632-8", "gripe");
 var consu1 = new Consultorio("Odontologia", [pac1, pac2]);
 //Pruebas de los get y set
-console.log(consu1.getPacientes());
 consu1.setPacientes(pac3);
-console.log(consu1.getPacientes());
 pac1.setNombre("Alejandra");
 pac2.setEdad(73);
 pac3.setRUT("75321548-7");
@@ -88,6 +86,20 @@ var validar_form = (nombre, edad, rut, diagnostico) => {
         return true;
     }
 }
+
+//Limpiar los formularios de la pagina
+var limpiar_form = () => {
+    let inputs_t = document.querySelectorAll('input[type="text"]');
+    console.log(inputs_t);
+    let inputs_n = document.querySelectorAll('input[type="number"]');
+    console.log(inputs_n);
+    inputs_t.forEach(function(input) {
+        input.value = '';
+    });
+    inputs_n.forEach(function(input) {
+        input.value = '';
+    });
+};
 
 $(document).ready(function() {
     //Identificar el consultorio
@@ -115,10 +127,7 @@ $(document).ready(function() {
             let nuevo_paciente = new Paciente(nombre, edad, rut, diagnostico);
             consu1.setPacientes(nuevo_paciente);
             alert("Nuevo paciente ingresado con éxito.")
-            $("#nombre").val("");
-            $("#edad").val("");
-            $("#rut").val("");
-            $("#diagnostico").val("");
+            limpiar_form();
         } else {
             alert("El formulario debe estar completo.")
         }
@@ -169,10 +178,7 @@ $(document).ready(function() {
             consu1.pacientes[indice_a_editar].setRUT(rut);
             consu1.pacientes[indice_a_editar].setDiagnostico(diagnostico);
             alert("Datos modificados con éxito");
-            $("#nombre_editar").val("");
-            $("#edad_editar").val("");
-            $("#rut_editar").val("");
-            $("#diagnostico_editar").val("");
+            limpiar_form();
             $("#form_a_editar").hide();
             $("#nombre_a_editar").text("");
         } else {
