@@ -2,3 +2,12 @@ a {
     text-decoration: none;
     color: white;
 }
+
+#form_a_editar {
+    display: none;
+}
+
+#form_a_editar p {
+    color: rgb(179, 26, 26);
+    font-weight: 700;
+}
