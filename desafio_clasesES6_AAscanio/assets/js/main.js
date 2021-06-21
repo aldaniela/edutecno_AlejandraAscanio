@@ -1,42 +1,9 @@
-//Crear la clase Cliente
-class Cliente {
-    constructor(nombre, impuesto) {
-        this._nombre = nombre;
-        this._impuesto = impuesto || {};
-    }
-    get nombre() {
-        return this._nombre;
-    }
-    set nombre(nuevo_nombre) {
-        this._nombre = nuevo_nombre;
-    }
-    get impuesto() {
-        return this._impuesto;
-    }
-    calcularImpuesto(monto_bruto_anual, deducciones) {
-        return (monto_bruto_anual - deducciones) * 21 / 100;
-    }
-}
+//Importar la clase Cliente
 
-//Crear la clase Impuestos
-class Impuestos {
-    constructor(monto_bruto_anual, deducciones) {
-        this._monto_bruto_anual = monto_bruto_anual;
-        this._deducciones = deducciones;
-    }
-    get monto_bruto_anual() {
-        return this._monto_bruto_anual;
-    }
-    get deducciones() {
-        return this._deducciones;
-    }
-    set monto_bruto_anual(n_monto_bruto_anual) {
-        this._monto_bruto_anual = n_monto_bruto_anual;
-    }
-    set deducciones(n_deducciones) {
-        this._deducciones = n_deducciones;
-    }
-}
+import Cliente from "../clases/cliente.js"
+
+//Importar la clase Impuestos
+import Impuestos from "../clases/impuestos.js"
 
 //Prueba de las clases
 var i1 = new Impuestos(1500, 50);
