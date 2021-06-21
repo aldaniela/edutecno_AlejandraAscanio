@@ -1,11 +1,7 @@
 //Importar la clase Cliente
-
-/* import Cliente from "../clases/cliente.js" */
-
 import Cliente from "../fullstack-entorno/dist/cliente.js"
 
 //Importar la clase Impuestos
-/* import Impuestos from "../clases/impuestos.js" */
 import Impuestos from "../fullstack-entorno/dist/impuestos.js"
 
 //Creo un arreglo para guardar a todos los clientes
