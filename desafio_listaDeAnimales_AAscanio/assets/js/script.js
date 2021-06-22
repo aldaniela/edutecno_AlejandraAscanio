@@ -24,10 +24,10 @@ class Mascota extends Animal {
         this._nombre_mascota = nombre_mascota;
         this._enfermedad = enfermedad;
     }
-    get nombre() {
+    get nombre_mascota() {
         return this._nombre_mascota;
     }
-    set nombre(nuevo_nombre_mascota) {
+    set nombre_mascota(nuevo_nombre_mascota) {
         this._nombre_mascota = nuevo_nombre_mascota;
     }
     get enfermedad() {
@@ -41,7 +41,7 @@ class Mascota extends Animal {
 //Prueba de las clases
 var m1 = new Mascota("Alejandra", "Tocornal", "953224413", "Perro", "Moli", "siempre tiene hambre");
 console.log(m1);
-console.log(m1.nombre)
+console.log(m1.nombre_mascota)
 console.log(m1.tipo)
 console.log(m1.datosPropietario());
 
@@ -60,14 +60,14 @@ agregar.addEventListener('click', function(e) {
     if (tipo == "perro") {
         let perro = new Mascota(nombre_propietario, direccion, telefono, tipo, nombre_mascota, enfermedad);
         document.getElementById('resultado').innerHTML = `<li>${perro.datosPropietario()}</li><li>${perro.tipo}, mientras que el 
-        nombre de la mascota es: ${perro.nombre} y la enfermedad es: ${perro.enfermedad}</li>`;
+        nombre de la mascota es: ${perro.nombre_mascota} y la enfermedad es: ${perro.enfermedad}</li>`;
     } else if (tipo == "gato") {
         let gato = new Mascota(nombre_propietario, direccion, telefono, tipo, nombre_mascota, enfermedad);
         document.getElementById('resultado').innerHTML = `<li>${gato.datosPropietario()}</li><li>${gato.tipo}, mientras que el 
-        nombre de la mascota es: ${gato.nombre} y la enfermedad es: ${gato.enfermedad}</li>`;
+        nombre de la mascota es: ${gato.nombre_mascota} y la enfermedad es: ${gato.enfermedad}</li>`;
     } else if (tipo == "conejo") {
         let conejo = new Mascota(nombre_propietario, direccion, telefono, tipo, nombre_mascota, enfermedad);
         document.getElementById('resultado').innerHTML = `<li>${conejo.datosPropietario()}</li><li>${conejo.tipo}, mientras que el 
-        nombre de la mascota es: ${conejo.nombre} y la enfermedad es: ${conejo.enfermedad}</li>`;
+        nombre de la mascota es: ${conejo.nombre_mascota} y la enfermedad es: ${conejo.enfermedad}</li>`;
     }
 });
