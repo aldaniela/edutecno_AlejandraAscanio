@@ -47,7 +47,7 @@ console.log(m1.datosPropietario());
 
 //Agregar una nueva mascota al presionar el boton Agregar
 let agregar = document.querySelector("button");
-agregar.addEventListener('click', function(e) {
+agregar.addEventListener("click", function(e) {
     e.preventDefault();
     console.log("Boton")
     location.href = "#resultado"; //para desplazar la pagina hacia donde está el resultado

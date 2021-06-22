@@ -1,17 +1,15 @@
-$(document).ready(function () {
+$(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip()
 
-  })
+})
 
 
-  $("#enviarCorreo").click(function(){
+$("#enviarCorreo").click(function() {
     alert("Mensaje de alerta")
-    })
+})
 
-    $('.carousel').carousel({
-        interval: false
-      })
-    $("#enviarCorreo").click(function(){
-        alert("Mensaje de alerta");
-        }
-    $('[data-toggle="popover"]').popover()
+$('.carousel').carousel({
+    interval: false
+})
+
+$('[data-toggle="popover"]').popover()

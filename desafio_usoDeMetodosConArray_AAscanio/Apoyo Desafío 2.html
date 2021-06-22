@@ -178,9 +178,18 @@
     var todos = radiologia.concat(traumatologia2.concat(dental))
     console.log(todos)
     document.write(`<h3>Listado general de pacientes atendidos</h3>`)
+    var todos_pacientes = [];
     todos.forEach(linea => {
         document.write(`<p>${linea.paciente}</p>`);
+        todos_pacientes.push(linea.paciente);
     });
+    //Esto lo hice para probar cómo podría ordenar la lista de pacientes
+    document.write(`<h3>Mi prueba de lista ordenada de pacientes</h3>`)
+    todos_pacientes = todos_pacientes.sort();
+    todos_pacientes.forEach(linea => {
+        document.write(`<p>${linea}</p>`);
+    })
+
 
     //Punto 5. Filtras los pacientes que indican ser de ISAPRE en atención dental
     var isapre_dental = dental.filter(function(paciente) {
@@ -190,6 +199,7 @@
     isapre_dental.forEach(linea => {
         document.write(`<p>${linea.paciente} - ${linea.prevision}</p>`);
     });
+
 
     //Punto 6. Filtras los pacientes que indican ser de FONASA en atención traumatologia
     var fonasa_trauma = traumatologia.filter(function(paciente) {
