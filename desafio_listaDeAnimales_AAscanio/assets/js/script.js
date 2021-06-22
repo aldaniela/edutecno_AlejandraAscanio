@@ -45,9 +45,12 @@ console.log(m1.nombre)
 console.log(m1.tipo)
 console.log(m1.datosPropietario());
 
-let agregar = document.getElementById('agregar');
+//Agregar una nueva mascota al presionar el boton Agregar
+let agregar = document.querySelector("button");
 agregar.addEventListener('click', function(e) {
     e.preventDefault();
+    console.log("Boton")
+    location.href = "#resultado"; //para desplazar la pagina hacia donde está el resultado
     let nombre_propietario = document.getElementById("propietario").value;
     let telefono = document.getElementById("telefono").value;
     let direccion = document.getElementById("direccion").value;
